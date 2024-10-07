@@ -1,0 +1,305 @@
+@font-face {
+    font-family: 'Riviera Nights';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Riviera Nights'), url('../RivieraNightsTrial-Regular.otf') format('truetype');
+}
+
+* {
+    text-decoration: none;
+    font-family: 'Riviera Nights';
+    box-sizing: border-box;
+
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar-logo {
+    height: 80px;
+    width: fit-content;
+    transition: height 0.3s ease;
+}
+
+.MENU-circle-YOGA {
+    color: white;
+    background-color: #ed7235da;
+    padding: 18px;
+    border-radius: 50px;
+}
+
+.nav-yoga-bg-main {
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    color: #ffffffcc;
+}
+
+.navbar-yoga-bg-main {
+    width: 100%;
+    height: 120px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-yoga-bg-main-ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 86%;
+    height: 100%;
+}
+
+.BgColour {
+    background-color: rgba(226, 226, 224, 0.884);
+}
+
+.menu-nav-yoga {
+    font-weight: bolder;
+    letter-spacing: 0.1666666667em;
+    font-size: 1rem;
+    line-height: 2;
+    text-transform: uppercase;
+    position: relative;
+    border: none;
+    color: inherit;
+}
+
+@media screen and (max-width: 650px) {
+    .drawer {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: fit-content;
+        color: #ffffff;
+        background-color: #ED7235;
+        backdrop-filter: blur(8px);
+        transition: transform 0.8s ease;
+        z-index: 1020;
+        font-size: small;
+        display: flex;
+        justify-content: center;
+    }
+
+    .drawer-footer {
+        font-size: small;
+        height: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .drawer-header {
+        display: flex;
+        background-color: #ed7235;
+        color: aliceblue;
+        padding: 5% 5%;
+        margin: 1% 0%;
+        text-align: end;
+        height: 10%;
+        width: 100%;
+    }
+
+
+    .drawer-footer p,
+    .drawer-footer button {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .social-icons {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .social-icons p {
+        font-size: 18px;
+        margin: 0 5px;
+    }
+
+    .btn-outline-success {
+        width: 100%;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .social-icons p {
+        font-size: 8px;
+    }
+
+    .btn-outline-success {
+        font-size: 12px;
+    }
+
+    .social-icons {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .social-icons p {
+        font-size: 18px;
+        margin: 0 5px;
+    }
+
+    .btn-outline-success {
+        width: 50%;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (min-width: 650px) {
+
+    .drawer {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 596px;
+        color: #ffffff;
+        background-color: #ED7235;
+        backdrop-filter: blur(8px);
+        transition: transform 0.8s ease;
+        z-index: 1020;
+        display: flex;
+        justify-content: center;
+    }
+
+
+}
+
+
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff17;
+    backdrop-filter: blur(0.2px);
+    z-index: 1010;
+}
+
+.menu-text-nys-yoga {
+    z-index: 9999;
+}
+
+.drawer-left {
+    left: -696px;
+    transform: translateX(-696px);
+}
+
+.drawer.show {
+    transform: translateX(696px);
+}
+
+.drawer-header {
+    display: flex;
+    background-color: #ed7235;
+    color: aliceblue;
+    padding: 5% 5%;
+    margin: 1% 0%;
+    text-align: end;
+    height: 10%;
+}
+
+.drawer-body {
+    padding: 1rem;
+    height: 70%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.drawer-footer {
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.drawer-content-scrollable {
+    max-height: 100%;
+    overflow-y: auto;
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* //////////// */
+/* Filename - App.css */
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont,
+        "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+        "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas,
+        "Courier New", monospace;
+  }
+  
+  #article {
+    margin-top: 1000px;
+    font-size: 3rem;
+    background-color: rgb(243, 124, 124);
+    font-weight: 800;
+    text-align: center;
+    padding: 80px;
+    border: 2px solid red;
+    margin-bottom: 500px;
+  }
+  
+  #course {
+    margin-top: 500px;
+    border: 6px double green;
+    font-size: 3rem;
+    background-color: lightgreen;
+    font-weight: 800;
+    text-align: center;
+    padding: 80px;
+  }
+  
+  button {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  

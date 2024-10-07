@@ -1,0 +1,167 @@
+import React, { useState, useEffect } from 'react';
+import emailjs from '@emailjs/browser';
+import img from '../IMAGE/form-yoga.png';
+import mobileImg from '../IMAGE/form-yoga.png';
+import './YogaForm.css'
+
+
+
+const YogaForm = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    number: '',
+    classType: '',
+    level: ''
+  });
+  const handleSelect = (value) => {
+    setFormData({
+      ...formData,
+      classType: value
+    });
+  };
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs.sendForm('service_lyfqebm', 'template_0hc31ai', e.target, '7LZ7Pyk8u84wlH4qs')
+      .then((result) => {
+        alert('Form sent successfully!');
+      }, (error) => {
+        alert('Error sending form:', error.text);
+      });
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  return (
+    <div className="container-fluid mt-5">
+      <div className="row">
+        <div className="col-md-6">
+          <img
+            src={isMobile ? mobileImg : img}
+            alt="img"
+            className="img-fluid"
+          />
+        </div>
+        <div className="col-md-6 mt-5 p-3">
+          <span className=''> Please, fill in the form and then Click the Send button. <br />
+            Fields marked with <span className="required">*</span> are mandatory fields</span>
+          <form onSubmit={sendEmail} className="d-flex flex-column mt-3 ">
+            <div className="form-group col-lg-6 ">
+              <label className="mb-2"> Name <span className="required">*</span></label>
+              <input
+                type="text"
+                name="name"
+                className="form-control mb-3"
+                value={formData.name}
+                onChange={handleChange}
+                placeholder='eg: Stilinski'
+                required
+              />
+            </div>
+            <div className="form-group col-lg-6 ">
+              <label className="mb-2">Email <span className="required">*</span></label>
+              <input
+                type="email"
+                name="email"
+                className="form-control mb-3"
+                value={formData.email}
+                onChange={handleChange}
+                required
+                placeholder='eg: Stilinski@gmail.com'
+              />
+            </div>
+            <div className="form-group col-lg-6  ">
+              <label className="mb-2">Phone <span className="required">*</span></label>
+              <input
+                type="tel"
+                name="number"
+                className="form-control mb-3"
+                value={formData.number}
+                onChange={handleChange}
+                required
+                placeholder='eg: 9999888810'
+              />
+            </div>
+            <div className="form-group col-lg-6 mt-3">
+              <label className="mb-2">What are you looking for?</label>
+              <div className="d-flex justify-content-between mb-3">
+                <label className="custom-radio d-flex align-items-center">
+                  <input
+                    type="radio"
+                    name="level"
+                    value="2BHK"
+                    checked={formData.level === '2BHK'}
+                    onChange={handleChange}
+                    required
+                  />
+                  <span>2BHK</span>
+                </label>
+
+                <label className="custom-radio d-flex align-items-center">
+                  <input
+                    type="radio"
+                    name="level"
+                    value="3BHK"
+                    checked={formData.level === '3BHK'}
+                    onChange={handleChange}
+                    required
+                  />
+                  <span>3BHK</span>
+                </label>
+
+                <label className="custom-radio d-flex align-items-center">
+                  <input
+                    type="radio"
+                    name="level"
+                    value="Plots"
+                    checked={formData.level === 'Plots'}
+                    onChange={handleChange}
+                    required
+                  />
+                  <span>Plots</span>
+                </label>
+              </div>
+            </div>
+
+            <div className="custom-dropdown col-lg-6 mt-3">
+              <div className="custom-select">
+                <div className="selected-option">{formData.classType || "Location*"}</div>
+                <ul className="options-list">
+                  <li onClick={() => handleSelect('Coimbatore')}>Coimbatore</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Hidden input field to capture classType */}
+            <input
+              type="hidden"
+              name="classType"
+              value={formData.classType}
+            />
+            <button type="submit" className="button-yoga mt-3">SUBMIT</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default YogaForm;

@@ -1,0 +1,639 @@
+.sec-whatwe-about-yoga {
+
+  padding: 80px 0px;
+
+
+
+  .about-yoga-div {
+    .text-div-about-yoga {
+      width: 80%;
+
+
+      h2 {
+        font-weight: bolder;
+        color: #ed7235;
+
+      }
+
+
+      text-align: center;
+      padding: 5px 25px;
+      text-align: justify;
+      border-left: 4px solid #ed7235;
+    }
+  }
+
+
+}
+
+.sec-whatwedo-yoga {
+  background-color: black;
+  padding: 100px 0px;
+
+  .whatwedo-yoga {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .whatwe-yoga-div {
+
+
+      h2 {
+        font-weight: bolder;
+        color: #ed7235;
+
+      }
+
+      .text-div-whatwe-yoga {
+        padding: 20px;
+        color: #dddddd;
+      }
+    }
+  }
+
+
+}
+
+@media screen and (min-width: 992px) {
+  .sec-whatwedo-yoga {
+    margin-top: 25vh;
+  }
+
+  .sec-whatwedo-yoga-img {
+    display: flex;
+    justify-content: end;
+
+
+    img {
+      margin-top: -50vh;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+
+
+  .sec-whatwedo-yoga {
+    background-color: black;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .whatwedo-yoga {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+
+      .whatwe-yoga-div {
+
+        h2 {
+          font-weight: bolder;
+          color: #ed7235;
+        }
+
+        .text-div-whatwe-yoga {
+          color: #dddddd;
+        }
+      }
+    }
+
+  }
+
+}
+
+.trust-partr-sec-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 100px 0px;
+
+
+  h2 {
+    text-transform: uppercase;
+
+
+    span {
+      color: #ED7235;
+      font-weight: bolder;
+      font-size: 80px;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+  .trust-partr-sec-div {
+    padding: 100px 0px;
+    text-align: center;
+
+    h2 {
+
+      span {
+        color: #ED7235;
+        font-weight: bolder;
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+/* //// */
+
+.dream-house-heading h1 {
+  font-size: 128px;
+  color: #cccccc;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.box1 {
+  position: relative;
+  z-index: 1;
+  border: solid;
+  height: 40vh;
+  width: 40vw;
+  margin: 50px 0px 0px 0xp;
+  background: black;
+}
+
+.box2 {
+  position: absolute;
+  z-index: 3;
+  width: 45vw;
+  background-image: url('../IMAGE/index-img-yoga.png');
+  background-size: cover;
+  background-position: center;
+  left: 20%;
+  top: 35%;
+  height: 55vh;
+}
+
+.box3 {
+  position: absolute;
+  z-index: 2;
+  background: #ed7235;
+  height: 40vh;
+  left: 50%;
+  width: 40vw;
+  top: 95%;
+
+}
+
+.box4 {
+  position: absolute;
+  z-index: 4;
+  background: #f5f5f5;
+  height: fit-content;
+  left: 53%;
+  width: 35vw;
+  top: 110%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.082), 0 6px 45px 0 rgba(68, 0, 0, 0.062);
+  display: flex;
+  padding: 5% 1%;
+}
+
+.fourth-box-contents {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fourth-box-contents h3 {
+  color: #ED7235;
+  font-size: 40pt;
+  line-height: 110%;
+}
+
+.fourth-box-contents p {
+  color: #838382;
+}
+
+.fourth-box-contents span {
+  font-size: larger;
+  color: #ED7235;
+}
+
+@media (max-width: 576px) {
+
+  .box1,
+  .box2,
+  .box3 {
+    display: none;
+  }
+
+  .dream-home-mob-img {
+    padding: 10px;
+  }
+
+  .dream-home-mob-img img {
+    left: 0%;
+    height: 30vh;
+    width: 100%;
+    top: 0%;
+  }
+
+  .box4 {
+    left: 0%;
+    top: 0;
+    width: fit-content;
+  }
+
+  .fourth-box-contents h3 {
+    font-size: 27px;
+    font-weight: bold;
+  }
+
+  .fourth-box-contents p {
+    font-size: 14px;
+  }
+
+
+  .dream-house-heading h1 {
+    font-size: 35px;
+    margin-top: 5px;
+  }
+
+  .section-main-dream-house-yoga {
+    height: 40vh;
+  }
+
+
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+
+  .box1,
+  .box2,
+  .box3 {
+    display: none;
+  }
+
+  .dream-home-mob-img {
+    padding: 10px;
+  }
+
+  .dream-home-mob-img img {
+    left: 0%;
+    height: 40vh;
+    width: 100%;
+    top: 0%;
+  }
+
+  .box4 {
+    left: 0%;
+    top: 0;
+    width: fit-content;
+  }
+
+  .fourth-box-contents h3 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .fourth-box-contents p {
+    font-size: 17px;
+  }
+
+  .section-main-dream-house-yoga {
+    height: 43vh;
+  }
+
+  .dream-house-heading h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+  .box1,
+  .box2,
+  .box3 {
+    display: none;
+  }
+
+  .dream-home-mob-img {
+    padding: 10px;
+  }
+
+  .dream-home-mob-img img {
+    left: 0%;
+    height: 60vh;
+    width: 100%;
+    top: 0%;
+  }
+
+  .box4 {
+    left: 0%;
+    top: 0;
+    width: fit-content;
+  }
+
+  .fourth-box-contents h3 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .fourth-box-contents p {
+    font-size: 17px;
+  }
+
+  .section-main-dream-house-yoga {
+    height: 40vh;
+  }
+
+  .dream-house-heading h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .section-main-dream-house-yoga {
+    height: 95vh;
+  }
+
+  .box4 {
+    padding: 5% .5%;
+  }
+
+  .fourth-box-contents h3 {
+    font-size: 28pt;
+    font-weight: bold;
+  }
+
+  .fourth-box-contents p {
+    font-size: 10pt;
+  }
+
+  .dream-house-heading h1 {
+    font-size: 100px;
+    color: #cccccc;
+  }
+
+  .box1 {
+    height: 40vh;
+    width: 40vw;
+  }
+
+  .box2 {
+    width: 45vw;
+    left: 15%;
+    top: 25%;
+    height: 45vh;
+  }
+
+  .box3 {
+    height: 40vh;
+    left: 50%;
+    width: 45vw;
+    top: 65%;
+  }
+
+  .box4 {
+    height: fit-content;
+    left: 52.5%;
+    width: 40vw;
+    top: 71.5%;
+    padding: 5% .5%;
+  }
+
+  .dream-home-mob-img {
+    display: none;
+  }
+
+}
+
+@media (min-width: 1201px) {
+  .section-main-dream-house-yoga {
+    height: 100vh;
+  }
+
+  .dream-home-mob-img {
+    display: none;
+  }
+}
+
+/* tab */
+
+.tab-heading-yoga h3 {
+  font-size: 40px;
+  border-left: 3px solid #ED7235;
+  padding-left: 15px;
+  margin: 30px 0px;
+  font-weight: bolder;
+}
+
+.card-img-top {
+  transition: 500ms;
+}
+
+.card-img-top:hover {
+  scale: 1.025;
+  transition: 500ms;
+}
+
+/* tab-pane */
+.tab-pane .title {
+  margin-bottom: 1rem;
+}
+
+.title--h5 {
+  color: #ED7235;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+  font-weight: 900;
+}
+
+.title {
+  transition: all 0.1s cubic-bezier(0.72, 0.16, 0.345, 0.875);
+}
+
+.content-grid__description,
+.content-grid__role {
+  font-size: .9375rem;
+  color: #C4C4C4;
+  margin-bottom: 0;
+}
+.btn-link {
+  color: #f05b27;
+  display: inline-block;
+  font-weight: 400;
+  position: relative;
+  text-decoration: none;
+}
+.btn-link {
+  font-weight: 400;
+  color: #ED7235;
+  text-decoration: none;
+}
+
+
+.nav-tabs .nav-link {
+  border: 1px solid transparent;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  color: #555;
+  padding: 15px 40px;
+  transition: all 0.3s ease;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #fff;
+  border-color: #ddd #ddd #fff;
+  color: #ffffff;
+  background-color: #ED7235;
+}
+
+.nav-tabs .nav-link:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.nav-tabs .nav-link:active {
+  background-color: #e9ecef;
+}
+
+.nav-tabs .nav-link.disabled {
+  color: #6c757d;
+}
+
+@media (max-width: 576px) {
+
+  .right-image-left-text-yoga {
+    padding-bottom: 10%;
+  }
+
+  .right-text-yoga {
+    color: #6c757d;
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: 1px;
+  }
+
+  .right-text-yoga span {
+    font-size: 50px;
+    color: #ED7235;
+    font-weight: bold;
+  }
+
+  .right-img-yoga {
+    display: flex;
+    justify-content: end;
+  }
+}
+
+@media (min-width: 571px) {
+
+  .right-text-yoga {
+    color: #6c757d;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 1px;
+  }
+
+  .right-text-yoga span {
+    font-size: 60px;
+    color: #ED7235;
+    font-weight: bold;
+  }
+
+  .right-img-yoga {
+    display: flex;
+    justify-content: end;
+  }
+}
+
+
+/* ////////footer */
+.footer-yoga {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  .footer-logo-yoga {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-logo-yoga img {
+    height: 170px;
+  }
+
+  .footer-corp-yoga h3 {
+    color: #ED7235;
+    font-weight: bold;
+  }
+
+  .footer-corp-yoga p {
+    color: #838382;
+  }
+
+  .footer-navi-yoga h3 {
+    color: #ED7235;
+    font-weight: bold;
+  }
+
+  .footer-navi-yoga p {
+    color: #838382;
+  }
+
+  .footer-followus-yoga h3 {
+    color: #ED7235;
+    font-weight: bold;
+  }
+
+  .footer-followus-yoga div {
+    font-size: 20px;
+    color: #838382;
+  }
+
+  .btn-outline-warning {
+    color: #ED7235;
+    border-color: #ED7235;
+    background-color: transparent;
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+  }
+
+  .btn-outline-warning:hover {
+    color: #212529;
+    background-color: #ED7235;
+    border-color: #ED7235;
+  }
+
+  .yoga-footer-call-btn {
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+    border-radius: 0.25rem;
+    text-align: center;
+    width: 225px;
+  }
+
+  .yoga-footer-call-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.25);
+  }
+}
+
+
+
+
+
+
+
+
+
+
