@@ -1,0 +1,10 @@
+MCP2200
+
+http://dangerousprototypes.com/docs/MCP2200_breakout_board
+http://www.openpicus.com/cms/
+http://interactive-matter.eu/2009/02/arduino-lis302dl/
+http://interactive-matter.eu/2009/12/arduino-barometric-pressure-sensor-bmp085/
+http://www.electrobob.com/ego-box/
+http://dangerousprototypes.com/forum/viewtopic.php?t=937#msg14397
+http://www.billporter.info/not-so-tiny-power-meter/
+http://sensebridge.net/projects/heart-spark/

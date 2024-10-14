@@ -39,7 +39,6 @@
   
   .custom-dropdown {
     position: relative;
-    
     z-index: 1000;
   }
   
@@ -102,7 +101,7 @@
   }
   
   .custom-radio input[type="radio"]:checked + span::before {
-    background-color: #ED7235; /* Custom color when selected */
+    background-color: #ED7235; 
   }
   
   .custom-radio span {

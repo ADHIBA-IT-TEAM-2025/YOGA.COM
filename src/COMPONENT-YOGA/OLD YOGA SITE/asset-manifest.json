@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.57592712.css",
+    "main.js": "/static/js/main.b387f1e4.js",
+    "static/js/453.ed3810f9.chunk.js": "/static/js/453.ed3810f9.chunk.js",
+    "static/media/landing-banner-yoga.png": "/static/media/landing-banner-yoga.98d480a283c5a5fcb4fa.png",
+    "static/media/YOGALOGO-1.png": "/static/media/YOGALOGO-1.66a2ec8cc1b55c53025d.png",
+    "static/media/img-right-yoga.png": "/static/media/img-right-yoga.a5bf31bfe3043e245508.png",
+    "static/media/index-img-yoga.png": "/static/media/index-img-yoga.05d27d2bd193ca0a5bf7.png",
+    "static/media/whatwedo=about.png": "/static/media/whatwedo=about.961ae19a9e1c6e110099.png",
+    "static/media/form-yoga.png": "/static/media/form-yoga.a02c91177d6abc59a19c.png",
+    "static/media/2bhk-image-1.png": "/static/media/2bhk-image-1.35195c6e43720e7e80f9.png",
+    "static/media/2bhk-image-2.png": "/static/media/2bhk-image-2.155386c666cf5e8e817b.png",
+    "static/media/tab-card-image.png": "/static/media/tab-card-image.672bd5d84d1e71c0dfdb.png",
+    "static/media/3bhk-image-2.png": "/static/media/3bhk-image-2.9ad23b1ca1341f98db9a.png",
+    "static/media/2bhk-image-4.png": "/static/media/2bhk-image-4.56f7084f6b5c27a01cef.png",
+    "static/media/3bhk-image.png": "/static/media/3bhk-image.32f707b22ff7c5493044.png",
+    "static/media/2bhk-image-3.png": "/static/media/2bhk-image-3.1aef3b23ef2c9a00fc69.png",
+    "static/media/OMSAKTHI-2.png": "/static/media/OMSAKTHI-2.92f9ab2434dc40a523e6.png",
+    "static/media/RivieraNightsTrial-Regular.otf": "/static/media/RivieraNightsTrial-Regular.b1c8f4992c3d8c9bad73.otf",
+    "index.html": "/index.html",
+    "main.57592712.css.map": "/static/css/main.57592712.css.map",
+    "main.b387f1e4.js.map": "/static/js/main.b387f1e4.js.map",
+    "453.ed3810f9.chunk.js.map": "/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.57592712.css",
+    "static/js/main.b387f1e4.js"
+  ]
+}

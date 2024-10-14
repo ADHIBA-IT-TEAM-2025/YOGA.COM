@@ -1,20 +1,14 @@
 .sec-whatwe-about-yoga {
-
   padding: 80px 0px;
 
-
-
   .about-yoga-div {
-    .text-div-about-yoga {
-      width: 80%;
 
+    .text-div-about-yoga {
 
       h2 {
         font-weight: bolder;
         color: #ed7235;
-
       }
-
 
       text-align: center;
       padding: 5px 25px;
@@ -24,6 +18,14 @@
   }
 
 
+}
+
+
+.whatwetext {
+  color: #ed7235;
+  font-weight: bolder;
+  font-size: 22px;
+  margin-right: 3px;
 }
 
 .sec-whatwedo-yoga {
@@ -46,6 +48,7 @@
       }
 
       .text-div-whatwe-yoga {
+        font-size: 18px;
         padding: 20px;
         color: #dddddd;
       }
@@ -56,6 +59,12 @@
 }
 
 @media screen and (min-width: 992px) {
+
+  .text-div-about-yoga {
+    width: 80%;
+  }
+
+
   .sec-whatwedo-yoga {
     margin-top: 25vh;
   }
@@ -69,10 +78,14 @@
       margin-top: -50vh;
     }
   }
+
 }
 
 @media screen and (max-width: 991px) {
 
+  .text-div-about-yoga {
+    width: 100%;
+  }
 
   .sec-whatwedo-yoga {
     background-color: black;
@@ -141,7 +154,6 @@
 }
 
 /* //// */
-
 .dream-house-heading h1 {
   font-size: 128px;
   color: #cccccc;
@@ -426,7 +438,6 @@
 }
 
 /* tab */
-
 .tab-heading-yoga h3 {
   font-size: 40px;
   border-left: 3px solid #ED7235;
@@ -467,6 +478,7 @@
   color: #C4C4C4;
   margin-bottom: 0;
 }
+
 .btn-link {
   color: #f05b27;
   display: inline-block;
@@ -474,12 +486,12 @@
   position: relative;
   text-decoration: none;
 }
+
 .btn-link {
   font-weight: 400;
   color: #ED7235;
   text-decoration: none;
 }
-
 
 .nav-tabs .nav-link {
   border: 1px solid transparent;
@@ -557,12 +569,267 @@
 }
 
 
+/* grid cards */
+* {
+  box-sizing: border-box;
+}
+
+
+
+.tab-section-yoga {
+  max-width: 81rem;
+  margin: 0 auto;
+}
+
+
+/* /Flexbox Cards/ */
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.card-item {
+  display: flex;
+  width: 100%;
+  padding: 0.5em;
+  /* margin-bottom: 2.5%; */
+  margin: 2% 0px 0px 0px;
+}
+
+/* ===== == = === 37.5em (600px) === = == ===== */
+@media all and (min-width: 600px) {
+  .card-item {
+    width: calc(100% / 12 * 6);
+  }
+}
+
+/* ===== == = === 56.25em (900px) === = == ===== */
+@media all and (min-width: 900px) {
+  .card-item {
+    width: calc(100% / 12 * 4);
+  }
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 310px;
+  padding: 0;
+  border-radius: 3px;
+}
+
+.card-img {
+  /* width: 100%; */
+  height: 400px;
+  width: 350px;
+  border-radius: 5px;
+  transition: 700ms;
+  box-shadow: 0 4px 8px 0 rgba(196, 196, 196, 0.2), 0 6px 50px 0 rgba(209, 207, 207, 0.19);
+}
+
+.card-img:hover {
+  opacity: 0.8;
+  transform: scale(1.025);
+  transition: 700ms;
+}
+
+.card-title,
+.card-text,
+.card-footer {
+  padding: 1em 1em 0;
+}
+
+.card-footer {
+  margin-bottom: 1em;
+}
+
+
+.dream-house-heading h1 {
+  font-size: 128px;
+  color: #cccccc;
+}
+
+@media (max-width: 576px) {
+  .dream-house-heading h1 {
+    font-size: 35px;
+    margin-top: 5px;
+  }
+
+  .tab-heading-yoga h3 {
+    font-size: 20px;
+    border-left: 3px solid #ED7235;
+    padding-left: 15px;
+    margin: 30px 0px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+
+  .dream-house-heading h1 {
+    font-size: 55px;
+    margin-top: 5px;
+  }
+
+  .tab-heading-yoga h3 {
+    font-size: 30px;
+    border-left: 3px solid #ED7235;
+    padding-left: 15px;
+    margin: 20px 0px;
+  }
+
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .dream-house-heading h1 {
+    font-size: 50px;
+    margin-top: 5px;
+  }
+
+  .tab-heading-yoga h3 {
+    font-size: 30px;
+    border-left: 3px solid #ED7235;
+    padding-left: 15px;
+    margin: 25px 0px;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .dream-house-heading h1 {
+    font-size: 100px;
+    color: #cccccc;
+  }
+
+  .tab-heading-yoga h3 {
+    font-size: 35px;
+    border-left: 3px solid #ED7235;
+    padding-left: 15px;
+    margin: 20px 0px;
+  }
+}
+
+
+.tab-heading-yoga h3 {
+  font-size: 35px;
+  border-left: 3px solid #ED7235;
+  padding-left: 15px;
+  margin: 28px 0px;
+}
+
+
+
+.nav-tabs .nav-link {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  padding: 20px 40px;
+  transition: all 0.3s ease;
+  color: #cccccc;
+}
+
+.nav-tabs .nav-link:hover {
+  border-color: #ed72359d;
+  color: #ED7235;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #ED7235;
+  color: #fff;
+}
+
+.nav-tabs .nav-link:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.nav-tabs .nav-link:active {
+  background-color: #ED7235;
+  color: #fff;
+}
+
+
+.card-body span {
+  font-size: 24px;
+  color: #ED7235;
+  margin: 5% 0px 5% 0px;
+  font-weight: 500;
+}
+
+.card-body p {
+  font-size: 17px;
+  color: #969696;
+  width: 350px;
+  line-height: 1.25;
+}
+
+.card-body h5 {
+  color: #ED7235;
+  font-weight: lighter;
+  cursor: pointer;
+
+}
+
+.card-body .oran-line {
+  width: 25px;
+  height: 2px;
+  transition: 500ms;
+  background-color: #ED7235;
+}
+
+.card-body .d-flex:hover .oran-line {
+  width: 50px;
+  height: 2px;
+  background-color: #ED7235;
+  transition: width 500ms;
+}
+
+
+
+/* 2nd tab */
+/* Base styles for the tabs */
+.nav-pills-2nd-tab-yoga .nav-link-2nd-tab-yoga {
+  border-radius: 4px;
+  padding: 13px 30px;
+  color: #333;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0px 10px 0px 0px;
+}
+
+/* Active tab styling */
+.nav-pills-2nd-tab-yoga .nav-link-2nd-tab-yoga.active {
+  color: #fff;
+  background-color: #ED7235;
+  border-color: #ED7235;
+}
+
+/* Hover effect */
+.nav-pills-2nd-tab-yoga .nav-link-2nd-tab-yoga:hover {
+  background-color: #ED7235;
+  color: #e9ecef;
+}
+
+/* Tab focus */
+.nav-pills-2nd-tab-yoga .nav-link-2nd-tab-yoga:focus {
+  outline: none;
+}
+
+
+
+/* Optional: Adjust tab padding for mobile devices */
+@media (max-width: 576px) {
+  .nav-pills .nav-link {
+    padding: 8px 12px;
+  }
+}
+
+
+
 /* ////////footer */
 .footer-yoga {
   display: flex;
   justify-content: center;
   align-items: center;
-
 
   .footer-logo-yoga {
     display: flex;
@@ -627,13 +894,3 @@
     box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.25);
   }
 }
-
-
-
-
-
-
-
-
-
-
