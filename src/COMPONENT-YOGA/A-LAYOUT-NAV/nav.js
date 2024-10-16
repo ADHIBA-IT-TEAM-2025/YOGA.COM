@@ -156,7 +156,7 @@ const Layout = () => {
 
         const whatsappMessage = `New message from ${name}\n\n*Name:* ${name}\n*Email:* ${email}\n*Subject:* ${subject}\n*Message:* ${message}\n\n=============================\n*Form:* ${postLink}\n=============================`;
 
-        const phoneNumber = '+918870313256'; // Your WhatsApp number
+        const phoneNumber = '+917708871117'; // Your WhatsApp number
         const encodedMessage = encodeURIComponent(whatsappMessage);
         const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
 

@@ -1,6 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Layout from './COMPONENT-YOGA/A-LAYOUT-NAV/nav';
 import { BrowserRouter as Router, Routes, Route, HashRouter } from 'react-router-dom'
 

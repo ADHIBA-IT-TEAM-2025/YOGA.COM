@@ -20,7 +20,6 @@
 
 }
 
-
 .whatwetext {
   color: #ed7235;
   font-weight: bolder;
@@ -574,13 +573,10 @@
   box-sizing: border-box;
 }
 
-
-
 .tab-section-yoga {
   max-width: 81rem;
   margin: 0 auto;
 }
-
 
 /* /Flexbox Cards/ */
 .cards {
@@ -708,15 +704,12 @@
   }
 }
 
-
 .tab-heading-yoga h3 {
   font-size: 35px;
   border-left: 3px solid #ED7235;
   padding-left: 15px;
   margin: 28px 0px;
 }
-
-
 
 .nav-tabs .nav-link {
   border-top-left-radius: 0.25rem;
@@ -782,8 +775,6 @@
   transition: width 500ms;
 }
 
-
-
 /* 2nd tab */
 /* Base styles for the tabs */
 .nav-pills-2nd-tab-yoga .nav-link-2nd-tab-yoga {
@@ -814,16 +805,12 @@
   outline: none;
 }
 
-
-
 /* Optional: Adjust tab padding for mobile devices */
 @media (max-width: 576px) {
   .nav-pills .nav-link {
     padding: 8px 12px;
   }
 }
-
-
 
 /* ////////footer */
 .footer-yoga {
@@ -893,4 +880,373 @@
     outline: none;
     box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.25);
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* /////video */
+.HoverVideo__wrapper {
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* This will ensure videos wrap to the next row */
+}
+
+.HoverVideo__videoBox {
+  width: 30%;
+  height: 400px;
+  overflow: hidden;
+  border-bottom: 10px solid #ED7235;
+}
+
+.HoverVideo__videoBox .video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.HoverVideo__videoBox .video::-webkit-media-controls {
+  display: none !important;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 992px) {
+  .HoverVideo__videoBox {
+    width: 48%; /* Adjust width to fit two videos per row */
+    margin-bottom: 20px;
+  }
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+  .HoverVideo__videoBox {
+    width: 100%; /* One video per row */
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+/* ////// */
+/* grid cards */
+* {
+  box-sizing: border-box;
+}
+
+
+
+.tab-section-yoga {
+  max-width: 81rem;
+  margin: 0 auto;
+}
+
+
+/* /Flexbox Cards/ */
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.card-item {
+  display: flex;
+  width: 100%;
+  padding: 0.5em;
+  /* margin-bottom: 2.5%; */
+  margin: 2% 0px 0px 0px;
+}
+
+/* ===== == = === 37.5em (600px) === = == ===== */
+@media all and (min-width: 600px) {
+  .card-item {
+      width: calc(100% / 12 * 6);
+  }
+}
+
+/* ===== == = === 56.25em (900px) === = == ===== */
+@media all and (min-width: 900px) {
+  .card-item {
+      width: calc(100% / 12 * 4);
+  }
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 310px;
+  padding: 0;
+  border-radius: 3px;
+}
+
+.card-img {
+  /* width: 100%; */
+  height: 400px;
+  width: 350px;
+  border-radius: 5px;
+  transition: 700ms;
+  box-shadow: 0 4px 8px 0 rgba(196, 196, 196, 0.2), 0 6px 50px 0 rgba(209, 207, 207, 0.19);
+}
+
+.card-img:hover {
+  opacity: 0.8;
+  transform: scale(1.025);
+  transition: 700ms;
+}
+
+.card-title,
+.card-text,
+.card-footer {
+  padding: 1em 1em 0;
+}
+
+.card-footer {
+  margin-bottom: 1em;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+
+.dream-house-heading h1 {
+  font-size: 128px;
+  color: #cccccc;
+}
+
+@media (max-width: 576px) {
+  .dream-house-heading h1 {
+      font-size: 35px;
+      margin-top: 5px;
+  }
+
+  .tab-heading-yoga h3 {
+      font-size: 17px;
+      border-left: 3px solid #ED7235;
+      padding-left: 15px;
+      margin: 30px 0px;
+  }
+
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+
+  .dream-house-heading h1 {
+      font-size: 55px;
+      margin-top: 5px;
+  }
+
+  .tab-heading-yoga h3 {
+      font-size: 30px;
+      border-left: 3px solid #ED7235;
+      padding-left: 15px;
+      margin: 20px 0px;
+  }
+
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .dream-house-heading h1 {
+      font-size: 50px;
+      margin-top: 5px;
+  }
+
+  .tab-heading-yoga h3 {
+      font-size: 30px;
+      border-left: 3px solid #ED7235;
+      padding-left: 15px;
+      margin: 25px 0px;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .dream-house-heading h1 {
+      font-size: 100px;
+      color: #cccccc;
+  }
+
+  .tab-heading-yoga h3 {
+      font-size: 35px;
+      border-left: 3px solid #ED7235;
+      padding-left: 15px;
+      margin: 20px 0px;
+  }
+}
+
+
+
+.tab-heading-yoga h3 {
+  font-size: 35px;
+  border-left: 3px solid #ED7235;
+  padding-left: 15px;
+  margin: 28px 0px;
+}
+
+
+
+.nav-tabs .nav-link {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  padding: 20px 25px;
+  transition: all 0.3s ease;
+  color: #cccccc;
+}
+
+.nav-tabs .nav-link:hover {
+  border-color: #ed72359d;
+  color: #ED7235;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #ED7235;
+  color: #fff;
+}
+
+.nav-tabs .nav-link:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.nav-tabs .nav-link:active {
+  background-color: #ED7235;
+  color: #fff;
+}
+
+
+
+
+.card-body span {
+  font-size: 24px;
+  color: #ED7235;
+  margin: 5% 0px 5% 0px;
+  font-weight: 500;
+}
+
+.card-body p {
+  font-size: 17px;
+  color: #969696;
+  width: 350px;
+  line-height: 1.25;
+}
+
+.card-body h5 {
+  color: #ED7235;
+  font-weight: lighter;
+  cursor: pointer;
+
+}
+
+.card-body .oran-line {
+  width: 25px;
+  height: 2px;
+  transition: 500ms;
+  background-color: #ED7235;
+}
+
+.card-body .d-flex:hover .oran-line {
+  width: 50px;
+  height: 2px;
+  background-color: #ED7235;
+  transition: width 500ms;
+}
+
+
+
+/* 2nd tab */
+/* Base styles for the tabs */
+.nav-pills-2nd-tab-yoga .nav-link-2nd-tab-yoga {
+  border-radius: 4px;
+  padding: 15px 40px;
+  color: #333;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 5px 10px 0px 0px;
+}
+
+/* Active tab styling */
+.nav-pills-2nd-tab-yoga .nav-link-2nd-tab-yoga.active {
+  color: #fff;
+  background-color: #ED7235;
+  border-color: #ED7235;
+}
+
+/* Hover effect */
+.nav-pills-2nd-tab-yoga .nav-link-2nd-tab-yoga:hover {
+  background-color: #ED7235;
+  color: #e9ecef;
+}
+
+/* Tab focus */
+.nav-pills-2nd-tab-yoga .nav-link-2nd-tab-yoga:focus {
+  outline: none;
+}
+
+
+
+/* 3nd tab */
+/* Base styles for the tabs */
+.nav-pills-3rd-tab-yoga .nav-link-2nd-tab-yoga {
+  border-radius: 4px;
+  padding: 13px 38px;
+  color: #333;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0px 10px 0px 0px;
+}
+
+/* Active tab styling */
+.nav-pills-3rd-tab-yoga .nav-link-2nd-tab-yoga.active {
+  color: #fff;
+  background-color: #ED7235;
+  border-color: #ED7235;
+}
+
+/* Hover effect */
+.nav-pills-3rd-tab-yoga .nav-link-2nd-tab-yoga:hover {
+  background-color: #ED7235;
+  color: #e9ecef;
+}
+
+/* Tab focus */
+.nav-pills-3rd-tab-yoga .nav-link-2nd-tab-yoga:focus {
+  outline: none;
+}
+
+
+
+/* MODAL TEXT AND IMAGES */
+
+#modal-modal-title h1 {
+  color: #ED7235;
+  font-weight: bold;
+}
+
+#modal-modal-title img {
+  border-radius: 10px;
+}
+
+.modal-main-yoga {
+  backdrop-filter: blur(10px);
+  /* Applies the blur effect */
+  background-color: #f9f9f925;
+  /* Optional: Adds a semi-transparent dark background */
 }
