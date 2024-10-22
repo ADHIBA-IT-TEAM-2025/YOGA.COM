@@ -9,111 +9,171 @@ import { faFacebook, faInstagram, faLinkedin, faTwitter, faWhatsapp, faXTwitter,
 import banner1 from '../IMAGE/landing-banner-yoga.png'
 import { motion, useInView } from "framer-motion";
 import YogaForm from "./YogaForm";
-import mobimg1 from '../IMAGE/index-img-yoga.png';
+import mobimg1 from '../IMAGE/index-img-yoga.jpeg';
 import rightimg1 from '../IMAGE/img-right-yoga.png'
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import Carousel from 'react-bootstrap/Carousel';
-
+// VIDEOOOOOOOOOO
+import VIDEOYOGA1 from "../IMAGE/4 POINTS - YOGA PROP.mp4"
+import VIDEOYOGA2 from "../IMAGE/about-video-1-yoga.mp4"
+import VIDEOYOGA3 from "../IMAGE/videos.mp4"
 // thoppampatti
 // card
-import thopcardimg3bhk2 from "../IMAGE/thoppampatti/3bhk-image-1.png"
-
+import thopcardimg3bhk2 from "../images/IMAGES/thoppampatti/3bhk-image-1.png"
 // 3bhk modalimages
-import thopmodalimg1 from "../IMAGE/thoppampatti/Ongoing 3bhk   Thoppamppati/2.png"
-import thopmodalimg2 from "../IMAGE/thoppampatti/Ongoing 3bhk   Thoppamppati/3.png"
-import thopmodalimg3 from "../IMAGE/thoppampatti/Ongoing 3bhk   Thoppamppati/4.png"
-import thopmodalimg4 from "../IMAGE/thoppampatti/Ongoing 3bhk   Thoppamppati/5.png"
-import thopmodalimg5 from "../IMAGE/thoppampatti/Ongoing 3bhk   Thoppamppati/6.png"
-import thopmodalimg6 from "../IMAGE/thoppampatti/Ongoing 3bhk   Thoppamppati/7.png"
-import thopmodalimg7 from "../IMAGE/thoppampatti/Ongoing 3bhk   Thoppamppati/8.png"
-import thopmodalimg8 from "../IMAGE/thoppampatti/Ongoing 3bhk   Thoppamppati/9.png"
-import thopmodalimg9 from "../IMAGE/thoppampatti/Ongoing 3bhk   Thoppamppati/10.png"
-import thopmodalimg10 from "../IMAGE/thoppampatti/Ongoing 3bhk   Thoppamppati/11.png"
-import thopmodalimg11 from "../IMAGE/thoppampatti/Ongoing 3bhk   Thoppamppati/12.png"
-import thopmodalimg12 from "../IMAGE/thoppampatti/Ongoing 3bhk   Thoppamppati/13.png"
-import thopmodalimg13 from "../IMAGE/thoppampatti/Ongoing 3bhk   Thoppamppati/14.png"
-
-
+import thopmodalimg1 from     "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/2.png"
+import thopmodalimg2 from     "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/3.png"
+import thopmodalimg3 from     "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/4.png"
+import thopmodalimg4 from     "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/5.png"
+import thopmodalimg5 from     "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/6.png"
+import thopmodalimg6 from     "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/7.png"
+import thopmodalimg7 from     "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/8.png"
+import thopmodalimg8 from     "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/9.png"
+import thopmodalimg9 from     "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/10.png"
+import thopmodalimg10 from    "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/11.png"
+import thopmodalimg11 from    "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/12.png"
+import thopmodalimg12 from    "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/13.png"
+import thopmodalimg13 from    "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/14.png"
 // kanuvai
 // card
-import kanucardimg2bhk1 from "../IMAGE/kanuvai/card-image-2bhk-1.png"
-import kanucardimg2bhk2 from "../IMAGE/kanuvai/card-image-2bhk-2.png"
-import kanucardimg2bhk3 from "../IMAGE/kanuvai/card-image-2bhk-3.png"
-import kanucardimg2bhk4 from "../IMAGE/kanuvai/card-image-2bhk-4.png"
-
+import kanucardimg2bhk1 from "../images/IMAGES/kanuvai/card-image-2bhk-1.png"
+import kanucardimg2bhk2 from "../images/IMAGES/kanuvai/card-image-2bhk-2.png"
+import kanucardimg2bhk3 from "../images/IMAGES/kanuvai/card-image-2bhk-3.png"
+import kanucardimg2bhk4 from "../images/IMAGES/kanuvai/card-image-2bhk-4.png"
 // 2bhk modalimages --1
-import kanumodal1img1 from "../IMAGE/kanuvai/Ongoing 2bhk   Kanuvai/2.png"
-import kanumodal1img2 from "../IMAGE/kanuvai/Ongoing 2bhk   Kanuvai/3.png"
-import kanumodal1img3 from "../IMAGE/kanuvai/Ongoing 2bhk   Kanuvai/4.png"
-import kanumodal1img4 from "../IMAGE/kanuvai/Ongoing 2bhk   Kanuvai/5.png"
-import kanumodal1img5 from "../IMAGE/kanuvai/Ongoing 2bhk   Kanuvai/6.png"
-import kanumodal1img6 from "../IMAGE/kanuvai/Ongoing 2bhk   Kanuvai/7.png"
-import kanumodal1img7 from "../IMAGE/kanuvai/Ongoing 2bhk   Kanuvai/8.png"
-
+import kanumodal1img1 from "../images/IMAGES/kanuvai/Ongoing 2bhk   Kanuvai/2.png"
+import kanumodal1img2 from "../images/IMAGES/kanuvai/Ongoing 2bhk   Kanuvai/3.png"
+import kanumodal1img3 from "../images/IMAGES/kanuvai/Ongoing 2bhk   Kanuvai/4.png"
+import kanumodal1img4 from "../images/IMAGES/kanuvai/Ongoing 2bhk   Kanuvai/5.png"
+import kanumodal1img5 from "../images/IMAGES/kanuvai/Ongoing 2bhk   Kanuvai/6.png"
+import kanumodal1img6 from "../images/IMAGES/kanuvai/Ongoing 2bhk   Kanuvai/7.png"
+import kanumodal1img7 from "../images/IMAGES/kanuvai/Ongoing 2bhk   Kanuvai/8.png"
 // 2bhk modalimages --2
-import kanumodal2img1 from "../IMAGE/kanuvai/Ongoing 2bhk   Kanuvai - 2/2.png"
-import kanumodal2img2 from "../IMAGE/kanuvai/Ongoing 2bhk   Kanuvai - 2/3.png"
-import kanumodal2img3 from "../IMAGE/kanuvai/Ongoing 2bhk   Kanuvai - 2/4.png"
-import kanumodal2img4 from "../IMAGE/kanuvai/Ongoing 2bhk   Kanuvai - 2/5.png"
-import kanumodal2img5 from "../IMAGE/kanuvai/Ongoing 2bhk   Kanuvai - 2/6.png"
-import kanumodal2img6 from "../IMAGE/kanuvai/Ongoing 2bhk   Kanuvai - 2/7.png"
-import kanumodal2img7 from "../IMAGE/kanuvai/Ongoing 2bhk   Kanuvai - 2/8.png"
-import kanumodal2img8 from "../IMAGE/kanuvai/Ongoing 2bhk   Kanuvai - 2/9.png"
-import kanumodal2img9 from "../IMAGE/kanuvai/Ongoing 2bhk   Kanuvai - 2/10.png"
-import kanumodal2img10 from "../IMAGE/kanuvai/Ongoing 2bhk   Kanuvai - 2/11.png"
-
+import kanumodal2img1 from "../images/IMAGES/kanuvai/Ongoing 2bhk   Kanuvai - 2/2.png"
+import kanumodal2img2 from "../images/IMAGES/kanuvai/Ongoing 2bhk   Kanuvai - 2/3.png"
+import kanumodal2img3 from "../images/IMAGES/kanuvai/Ongoing 2bhk   Kanuvai - 2/4.png"
+import kanumodal2img4 from "../images/IMAGES/kanuvai/Ongoing 2bhk   Kanuvai - 2/5.png"
+import kanumodal2img5 from "../images/IMAGES/kanuvai/Ongoing 2bhk   Kanuvai - 2/6.png"
+import kanumodal2img6 from "../images/IMAGES/kanuvai/Ongoing 2bhk   Kanuvai - 2/7.png"
+import kanumodal2img7 from "../images/IMAGES/kanuvai/Ongoing 2bhk   Kanuvai - 2/8.png"
+import kanumodal2img8 from "../images/IMAGES/kanuvai/Ongoing 2bhk   Kanuvai - 2/9.png"
+import kanumodal2img9 from "../images/IMAGES/kanuvai/Ongoing 2bhk   Kanuvai - 2/10.png"
+import kanumodal2img10 from "../images/IMAGES/kanuvai/Ongoing 2bhk   Kanuvai - 2/11.png"
 // 2bhk modalimages --3
-import kanumodal3img1 from "../IMAGE/kanuvai/Ongoing 2bhk   Kanuvai - 3/2.png"
-import kanumodal3img2 from "../IMAGE/kanuvai/Ongoing 2bhk   Kanuvai - 3/3.png"
-import kanumodal3img3 from "../IMAGE/kanuvai/Ongoing 2bhk   Kanuvai - 3/4.png"
-import kanumodal3img4 from "../IMAGE/kanuvai/Ongoing 2bhk   Kanuvai - 3/5.png"
-
-
+import kanumodal3img1 from "../images/IMAGES/kanuvai/Ongoing 2bhk   Kanuvai - 3/2.png"
+import kanumodal3img2 from "../images/IMAGES/kanuvai/Ongoing 2bhk   Kanuvai - 3/3.png"
+import kanumodal3img3 from "../images/IMAGES/kanuvai/Ongoing 2bhk   Kanuvai - 3/4.png"
+import kanumodal3img4 from "../images/IMAGES/kanuvai/Ongoing 2bhk   Kanuvai - 3/5.png"
 // 2bhk modalimages --4
-import kanumodal4img1 from "../IMAGE/kanuvai/Ongoing 2bhk   Kanuvai - 4/2.png"
-import kanumodal4img2 from "../IMAGE/kanuvai/Ongoing 2bhk   Kanuvai - 4/3.png"
-import kanumodal4img3 from "../IMAGE/kanuvai/Ongoing 2bhk   Kanuvai - 4/4.png"
-import kanumodal4img4 from "../IMAGE/kanuvai/Ongoing 2bhk   Kanuvai - 4/5.png"
-import kanumodal4img5 from "../IMAGE/kanuvai/Ongoing 2bhk   Kanuvai - 4/6.png"
-import kanumodal4img6 from "../IMAGE/kanuvai/Ongoing 2bhk   Kanuvai - 4/7.png"
-import kanumodal4img7 from "../IMAGE/kanuvai/Ongoing 2bhk   Kanuvai - 4/8.png"
-
-
-
-
+import kanumodal4img1 from "../images/IMAGES/kanuvai/Ongoing 2bhk   Kanuvai - 4/2.png"
+import kanumodal4img2 from "../images/IMAGES/kanuvai/Ongoing 2bhk   Kanuvai - 4/3.png"
+import kanumodal4img3 from "../images/IMAGES/kanuvai/Ongoing 2bhk   Kanuvai - 4/4.png"
+import kanumodal4img4 from "../images/IMAGES/kanuvai/Ongoing 2bhk   Kanuvai - 4/5.png"
+import kanumodal4img5 from "../images/IMAGES/kanuvai/Ongoing 2bhk   Kanuvai - 4/6.png"
+import kanumodal4img6 from "../images/IMAGES/kanuvai/Ongoing 2bhk   Kanuvai - 4/7.png"
+import kanumodal4img7 from "../images/IMAGES/kanuvai/Ongoing 2bhk   Kanuvai - 4/8.png"
 // MANIKARANPALAYAM
-import MANIcardimg3bhk1 from "../IMAGE/MANIKARANPALAYAM/CARD-FRONT-IMAGE-1-MANI.png"
-
+import MANIcardimg3bhk1 from "../images/IMAGES/MANIKARANPALAYAM/CARD-FRONT-IMAGE-1-MANI.png"
 // 3bhk modalimages --1
-import manimodal1img1 from "../IMAGE/MANIKARANPALAYAM/Ongoing 3bhk   Maniyakarampalayam -1/2.png"
-import manimodal1img2 from "../IMAGE/MANIKARANPALAYAM/Ongoing 3bhk   Maniyakarampalayam -1/3.png"
-import manimodal1img3 from "../IMAGE/MANIKARANPALAYAM/Ongoing 3bhk   Maniyakarampalayam -1/4.png"
-import manimodal1img4 from "../IMAGE/MANIKARANPALAYAM/Ongoing 3bhk   Maniyakarampalayam -1/5.png"
-import manimodal1img5 from "../IMAGE/MANIKARANPALAYAM/Ongoing 3bhk   Maniyakarampalayam -1/6.png"
-import manimodal1img6 from "../IMAGE/MANIKARANPALAYAM/Ongoing 3bhk   Maniyakarampalayam -1/7.png"
-import manimodal1img7 from "../IMAGE/MANIKARANPALAYAM/Ongoing 3bhk   Maniyakarampalayam -1/8.png"
-import manimodal1img8 from "../IMAGE/MANIKARANPALAYAM/Ongoing 3bhk   Maniyakarampalayam -1/9.png"
-import manimodal1img9 from "../IMAGE/MANIKARANPALAYAM/Ongoing 3bhk   Maniyakarampalayam -1/10.png"
-
-
-// MANIKARANPALAYAM
-import cardimg1kathir3bhk from "../IMAGE/kathirnaikenpalayam/card-img-kahtir-3bhk-1.png"
-
-// upcoming
+import manimodal1img1 from "../images/IMAGES/MANIKARANPALAYAM/Ongoing 3bhk   Maniyakarampalayam -1/2.png"
+import manimodal1img2 from "../images/IMAGES/MANIKARANPALAYAM/Ongoing 3bhk   Maniyakarampalayam -1/3.png"
+import manimodal1img3 from "../images/IMAGES/MANIKARANPALAYAM/Ongoing 3bhk   Maniyakarampalayam -1/4.png"
+import manimodal1img4 from "../images/IMAGES/MANIKARANPALAYAM/Ongoing 3bhk   Maniyakarampalayam -1/5.png"
+import manimodal1img5 from "../images/IMAGES/MANIKARANPALAYAM/Ongoing 3bhk   Maniyakarampalayam -1/6.png"
+import manimodal1img6 from "../images/IMAGES/MANIKARANPALAYAM/Ongoing 3bhk   Maniyakarampalayam -1/7.png"
+import manimodal1img7 from "../images/IMAGES/MANIKARANPALAYAM/Ongoing 3bhk   Maniyakarampalayam -1/8.png"
+import manimodal1img8 from "../images/IMAGES/MANIKARANPALAYAM/Ongoing 3bhk   Maniyakarampalayam -1/9.png"
+import manimodal1img9 from "../images/IMAGES/MANIKARANPALAYAM/Ongoing 3bhk   Maniyakarampalayam -1/10.png"
+// KATHIRNAIKCHENPALAYAM
+import cardimg1kathir3bhk from "../images/IMAGES/kathirnaikenpalayam/card-img-kahtir-3bhk-1.png"
+// 3BHK MODALIMAGES --1
+import kathirmodal1img1 from "../images/IMAGES/kathirnaikenpalayam/Ongoing 3bhk   Kathirnaikenpalayam - 1/2.png"
+import kathirmodal1img2 from "../images/IMAGES/kathirnaikenpalayam/Ongoing 3bhk   Kathirnaikenpalayam - 1/3.png"
+import kathirmodal1img3 from "../images/IMAGES/kathirnaikenpalayam/Ongoing 3bhk   Kathirnaikenpalayam - 1/4.png"
+import kathirmodal1img4 from "../images/IMAGES/kathirnaikenpalayam/Ongoing 3bhk   Kathirnaikenpalayam - 1/5.png"
+import kathirmodal1img5 from "../images/IMAGES/kathirnaikenpalayam/Ongoing 3bhk   Kathirnaikenpalayam - 1/6.png"
+import kathirmodal1img6 from "../images/IMAGES/kathirnaikenpalayam/Ongoing 3bhk   Kathirnaikenpalayam - 1/7.png"
+import kathirmodal1img7 from "../images/IMAGES/kathirnaikenpalayam/Ongoing 3bhk   Kathirnaikenpalayam - 1/8.png"
+import kathirmodal1img8 from "../images/IMAGES/kathirnaikenpalayam/Ongoing 3bhk   Kathirnaikenpalayam - 1/9.png"
+import kathirmodal1img9 from "../images/IMAGES/kathirnaikenpalayam/Ongoing 3bhk   Kathirnaikenpalayam - 1/10.png"
+import kathirmodal1img10 from "../images/IMAGES/kathirnaikenpalayam/Ongoing 3bhk   Kathirnaikenpalayam - 1/11.png"
+// upcoming -- IDIKARAI
 import upcomimg1 from "../IMAGE/upcoming/Upcoming Plot Idigarai.png"
-
-
-
+import upcomimg2 from "../IMAGE/upcoming/Upcoming Plot Idigarai-2.png"
+import upcomimg3 from "../IMAGE/upcoming/Upcoming Plot Idigarai-3.png"
+import upcomimg4 from "../IMAGE/upcoming/Upcoming Plot Idigarai-4.png"
 // completed
+// thoppampatti
 import cardimg1thop from "../IMAGE/completed/card-img-1-thoppampatti.png"
+// modalimages - thoppampatti
+import thopmodalcom1img1 from "../IMAGE/completed/Completed 3bhk   Thoppamppatti -1/2.png"
+import thopmodalcom1img2 from "../IMAGE/completed/Completed 3bhk   Thoppamppatti -1/3.png"
+import thopmodalcom1img3 from "../IMAGE/completed/Completed 3bhk   Thoppamppatti -1/4.png"
+import thopmodalcom1img4 from "../IMAGE/completed/Completed 3bhk   Thoppamppatti -1/5.png"
+import thopmodalcom1img5 from "../IMAGE/completed/Completed 3bhk   Thoppamppatti -1/6.png"
+import thopmodalcom1img6 from "../IMAGE/completed/Completed 3bhk   Thoppamppatti -1/7.png"
+import thopmodalcom1img7 from "../IMAGE/completed/Completed 3bhk   Thoppamppatti -1/8.png"
+import thopmodalcom1img8 from "../IMAGE/completed/Completed 3bhk   Thoppamppatti -1/9.png"
+import thopmodalcom1img9 from "../IMAGE/completed/Completed 3bhk   Thoppamppatti -1/10.png"
+// periyanaickenpalayam
 import cardimg2PNP from "../IMAGE/completed/card-img-2-PNP.png"
+// modalimages - periyanaickenpalayam 
+import pnpmodal1comimg1 from "../IMAGE/completed/Completed 4bhk gas  Company  Periyanaikenpalayam -2/2.png"
+import pnpmodal1comimg2 from "../IMAGE/completed/Completed 4bhk gas  Company  Periyanaikenpalayam -2/3.png"
+import pnpmodal1comimg3 from "../IMAGE/completed/Completed 4bhk gas  Company  Periyanaikenpalayam -2/4.png"
+import pnpmodal1comimg4 from "../IMAGE/completed/Completed 4bhk gas  Company  Periyanaikenpalayam -2/5.png"
+import pnpmodal1comimg5 from "../IMAGE/completed/Completed 4bhk gas  Company  Periyanaikenpalayam -2/6.png"
+import pnpmodal1comimg6 from "../IMAGE/completed/Completed 4bhk gas  Company  Periyanaikenpalayam -2/7.png"
+import pnpmodal1comimg7 from "../IMAGE/completed/Completed 4bhk gas  Company  Periyanaikenpalayam -2/8.png"
+import pnpmodal1comimg8 from "../IMAGE/completed/Completed 4bhk gas  Company  Periyanaikenpalayam -2/9.png"
+import pnpmodal1comimg9 from "../IMAGE/completed/Completed 4bhk gas  Company  Periyanaikenpalayam -2/10.png"
+import pnpmodal1comimg10 from "../IMAGE/completed/Completed 4bhk gas  Company  Periyanaikenpalayam -2/11.png"
+import pnpmodal1comimg11 from "../IMAGE/completed/Completed 4bhk gas  Company  Periyanaikenpalayam -2/12.png"
+import pnpmodal1comimg12 from "../IMAGE/completed/Completed 4bhk gas  Company  Periyanaikenpalayam -2/13.png"
+import pnpmodal1comimg13 from "../IMAGE/completed/Completed 4bhk gas  Company  Periyanaikenpalayam -2/14.png"
+import pnpmodal1comimg14 from "../IMAGE/completed/Completed 4bhk gas  Company  Periyanaikenpalayam -2/15.png"
+import pnpmodal1comimg15 from "../IMAGE/completed/Completed 4bhk gas  Company  Periyanaikenpalayam -2/16.png"
+import pnpmodal1comimg16 from "../IMAGE/completed/Completed 4bhk gas  Company  Periyanaikenpalayam -2/17.png"
+// KATHIRNAIKENPALAYAM
 import cardimg3kathir from "../IMAGE/completed/card-img-3-kathir.png"
+// MODALIMAGES - KATHIRNAIKENPALAYAM
+import kathirmodal1com1 from "../IMAGE/completed/Completed 3bhk   Kathirnaikenpalayam - 3/2.png"
+import kathirmodal1com2 from "../IMAGE/completed/Completed 3bhk   Kathirnaikenpalayam - 3/3.png"
+import kathirmodal1com3 from "../IMAGE/completed/Completed 3bhk   Kathirnaikenpalayam - 3/4.png"
+import kathirmodal1com4 from "../IMAGE/completed/Completed 3bhk   Kathirnaikenpalayam - 3/5.png"
+import kathirmodal1com5 from "../IMAGE/completed/Completed 3bhk   Kathirnaikenpalayam - 3/6.png"
+// Narasimhanaikenpalayam
 import cardimg4nsnp from "../IMAGE/completed/card-img-4-nsnpalaym.png"
+// MODALIMAGES - Narasimhanaikenpalayam
+import narasimodal1com1 from "../IMAGE/completed/Completed 4bhk   Narasimhanaikenpalayam - 4/2.png"
+import narasimodal1com2 from "../IMAGE/completed/Completed 4bhk   Narasimhanaikenpalayam - 4/3.png"
+import narasimodal1com3 from "../IMAGE/completed/Completed 4bhk   Narasimhanaikenpalayam - 4/4.png"
+import narasimodal1com4 from "../IMAGE/completed/Completed 4bhk   Narasimhanaikenpalayam - 4/5.png"
+import narasimodal1com5 from "../IMAGE/completed/Completed 4bhk   Narasimhanaikenpalayam - 4/6.png"
+import narasimodal1com6 from "../IMAGE/completed/Completed 4bhk   Narasimhanaikenpalayam - 4/7.png"
+import narasimodal1com7 from "../IMAGE/completed/Completed 4bhk   Narasimhanaikenpalayam - 4/8.png"
+import narasimodal1com8 from "../IMAGE/completed/Completed 4bhk   Narasimhanaikenpalayam - 4/9.png"
+import narasimodal1com9 from "../IMAGE/completed/Completed 4bhk   Narasimhanaikenpalayam - 4/10.png"
+// APPNAIKENPALAYAM
 import cardimg5app from "../IMAGE/completed/card-img-5-apppalaym.png"
+// modalimages - APPNAIKENPALAYAM
+import appmodal1img1 from "../IMAGE/completed/Completed 3bhk Appnaikenpalayam - 5/2.png"
+import appmodal1img2 from "../IMAGE/completed/Completed 3bhk Appnaikenpalayam - 5/3.png"
+import appmodal1img3 from "../IMAGE/completed/Completed 3bhk Appnaikenpalayam - 5/4.png"
+import appmodal1img4 from "../IMAGE/completed/Completed 3bhk Appnaikenpalayam - 5/5.png"
+// thudiyalur
 import cardimg6thud from "../IMAGE/completed/card-img-6-thudiyalur.png"
-
+// modalimages -  thudiyalur
+import thudimodal1img1 from "../IMAGE/completed/Completed 5bhk Thudiyalur,Karvy Garden - 6/2.png"
+import thudimodal1img2 from "../IMAGE/completed/Completed 5bhk Thudiyalur,Karvy Garden - 6/3.png"
+import thudimodal1img3 from "../IMAGE/completed/Completed 5bhk Thudiyalur,Karvy Garden - 6/4.png"
+import thudimodal1img4 from "../IMAGE/completed/Completed 5bhk Thudiyalur,Karvy Garden - 6/5.png"
+import thudimodal1img5 from "../IMAGE/completed/Completed 5bhk Thudiyalur,Karvy Garden - 6/6.png"
+import thudimodal1img6 from "../IMAGE/completed/Completed 5bhk Thudiyalur,Karvy Garden - 6/7.png"
+import thudimodal1img7 from "../IMAGE/completed/Completed 5bhk Thudiyalur,Karvy Garden - 6/8.png"
+import thudimodal1img8 from "../IMAGE/completed/Completed 5bhk Thudiyalur,Karvy Garden - 6/9.png"
 
 const style = {
     position: 'absolute',
@@ -126,6 +186,7 @@ const style = {
     outline: "none",
     borderRadius: "10px"
 };
+
 
 const YogahomeLanding = () => {
 
@@ -209,13 +270,6 @@ const Partner = () => {
 const Whatwedo = () => {
 
 
-    const videos = document.querySelectorAll(".video");
-
-    for (const video of videos) {
-        video.addEventListener('mouseover', function () { video.play() }, false);
-        video.addEventListener('mouseout', function () { video.pause() }, false);
-    }
-
 
 
     return (
@@ -239,18 +293,18 @@ const Whatwedo = () => {
                     <section class="HoverVideo container mt-5">
                         <div class="HoverVideo__wrapper mb-5">
                             <div class="HoverVideo__videoBox">
-                                <video class="video" loop preload="yes" muted>
-                                    <source src="https://assets.mixkit.co/videos/1704/1704-720.mp4" type="video/mp4" />
+                                <video class="video" autoPlay loop preload="yes" muted>
+                                    <source src={VIDEOYOGA1} type="video/mp4" />
                                 </video>
                             </div>
                             <div class="HoverVideo__videoBox">
-                                <video class="video" loop preload="yes" muted>
-                                    <source src="https://assets.mixkit.co/videos/1704/1704-720.mp4" type="video/mp4" />
+                                <video class="video" autoPlay loop preload="yes" muted>
+                                    <source src={VIDEOYOGA2} type="video/mp4" />
                                 </video>
                             </div>
                             <div class="HoverVideo__videoBox">
-                                <video class="video" loop preload="yes" muted>
-                                    <source src="https://assets.mixkit.co/videos/1704/1704-720.mp4" type="video/mp4" />
+                                <video class="video" autoPlay loop preload="yes" muted>
+                                    <source src={VIDEOYOGA3} type="video/mp4" />
                                 </video>
                             </div>
                         </div>
@@ -308,30 +362,54 @@ const Whatwedo = () => {
 
 const Projects = () => {
 
-   // modal images onclick function
-   const [open1, setOpen1] = useState(false);
-   const [open2, setOpen2] = useState(false);
-   const [open3, setOpen3] = useState(false);
-   const [open4, setOpen4] = useState(false);
-   const [open5, setOpen5] = useState(false);
-   const [open6, setOpen6] = useState(false);
-
-   const handleOpen1 = () => setOpen1(true);
-   const handleClose1 = () => setOpen1(false);
-   const handleOpen2 = () => setOpen2(true);
-   const handleClose2 = () => setOpen2(false);
-   const handleOpen3 = () => setOpen3(true);
-   const handleClose3 = () => setOpen3(false);
-   const handleOpen4 = () => setOpen4(true);
-   const handleClose4 = () => setOpen4(false);
-   const handleOpen5 = () => setOpen5(true);
-   const handleClose5 = () => setOpen5(false);
-   const handleOpen6 = () => setOpen6(true);
-   const handleClose6 = () => setOpen6(false);
+     // modal images onclick function
+     const [open1, setOpen1] = useState(false);
+     const [open2, setOpen2] = useState(false);
+     const [open3, setOpen3] = useState(false);
+     const [open4, setOpen4] = useState(false);
+     const [open5, setOpen5] = useState(false);
+     const [open6, setOpen6] = useState(false);
+     const [open7, setOpen7] = useState(false);
+     const [open9, setOpen9] = useState(false);
+     const [open10, setOpen10] = useState(false);
+     const [open11, setOpen11] = useState(false);
+     const [open12, setOpen12] = useState(false);
+     const [open13, setOpen13] = useState(false);
+     const [open14, setOpen14] = useState(false);
+ 
+     const handleOpen1 = () => setOpen1(true);
+     const handleClose1 = () => setOpen1(false);
+     const handleOpen2 = () => setOpen2(true);
+     const handleClose2 = () => setOpen2(false);
+     const handleOpen3 = () => setOpen3(true);
+     const handleClose3 = () => setOpen3(false);
+     const handleOpen4 = () => setOpen4(true);
+     const handleClose4 = () => setOpen4(false);
+     const handleOpen5 = () => setOpen5(true);
+     const handleClose5 = () => setOpen5(false);
+     const handleOpen6 = () => setOpen6(true);
+     const handleClose6 = () => setOpen6(false);
+     const handleOpen7 = () => setOpen7(true);
+     const handleClose7 = () => setOpen7(false);
+     const handleOpen9 = () => setOpen9(true);
+     const handleClose9 = () => setOpen9(false);
+     const handleOpen10 = () => setOpen10(true);
+     const handleClose10 = () => setOpen10(false);
+     const handleOpen11 = () => setOpen11(true);
+     const handleClose11 = () => setOpen11(false);
+     const handleOpen12 = () => setOpen12(true);
+     const handleClose12 = () => setOpen12(false);
+     const handleOpen13 = () => setOpen13(true);
+     const handleClose13 = () => setOpen13(false);
+     const handleOpen14 = () => setOpen14(true);
+     const handleClose14 = () => setOpen14(false);
+ 
+ 
+ 
 
     return (
         <>
-           <section className=" tab-section-yoga">
+          <section className=" tab-section-yoga ">
                 <div className=" dream-house-heading">
                     <h1>SWEET HOME</h1>
                 </div>
@@ -340,17 +418,17 @@ const Projects = () => {
                 </div>
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Ongoing</button>
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">ONGOING</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Upcoming</button>
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">UPCOMING</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Completed</button>
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">COMPLETED</button>
                     </li>
                 </ul>
 
-                <div class="tab-content mt-4" id="myTabContent">
+                <div class="tab-content p-2 mt-4" id="myTabContent">
                     {/* <!-- Ongoing Tab with Nested Tabs --> */}
 
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -451,7 +529,7 @@ const Projects = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="card-item"  onClick={handleOpen3} style={{ cursor: "pointer" }}  >
+                                            <div class="card-item" onClick={handleOpen3} style={{ cursor: "pointer" }}  >
                                                 <div class="card-body">
                                                     <img class="card-img" src={kanucardimg2bhk4} alt="" />
                                                     <span>2BHK</span>
@@ -563,7 +641,7 @@ const Projects = () => {
                                     <div class="tab-pane fade show active" id="2bhk-kathirnaikenpalayam" role="tabpanel" aria-labelledby="2bhk-kathirnaikenpalayam-tab">
                                         {/* Content for 2BHK under KATHIRNAIKENPALAYAM */}
                                         <div class="cards">
-                                            <div class="card-item" style={{ cursor: "pointer" }}  >
+                                            <div class="card-item" onClick={handleOpen7} style={{ cursor: "pointer" }}  >
                                                 <div class="card-body">
                                                     <img class="card-img" src={cardimg1kathir3bhk} alt="" />
                                                     <span>3BHK</span>
@@ -593,197 +671,52 @@ const Projects = () => {
 
 
 
-
-                        {/* LOCATIONS Tab Content for Modal */}
-
-                        {/* modal 1 for thoppampatti */}
-                        <Modal
-                            open={open1}
-                            onClose={handleClose1}
-                            aria-labelledby="modal-modal-title"
-                            aria-describedby="modal-modal-description"
-                            className="modal-main-yoga"
-                        >
-                            <Box sx={style}>
-                                <Typography id="modal-modal-title" variant="h6" component="h2">
-                                    <Carousel style={{ height: "500px", width: "500px" }}>
-
-                                        <Carousel.Item ><img className="d-block" src={thopmodalimg1} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={thopmodalimg2} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={thopmodalimg3} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={thopmodalimg4} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={thopmodalimg5} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={thopmodalimg6} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={thopmodalimg7} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={thopmodalimg8} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={thopmodalimg9} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={thopmodalimg10} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={thopmodalimg11} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={thopmodalimg12} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={thopmodalimg13} alt="First slide" /></Carousel.Item>
-
-                                    </Carousel>
-                                    <h1 className="text-center mt-3">OUR WORKS</h1>
-                                </Typography>
-                            </Box>
-                        </Modal>
-                        
-                        {/* modal 1 for kanuvai */}
-                        <Modal
-                            open={open2}
-                            onClose={handleClose2}
-                            aria-labelledby="modal-modal-title"
-                            aria-describedby="modal-modal-description"
-                            className="modal-main-yoga"
-                        >
-                            <Box sx={style}>
-                                <Typography id="modal-modal-title" variant="h6" component="h2">
-                                    <Carousel style={{ height: "500px", width: "500px" }}>
-
-                                        <Carousel.Item ><img className="d-block" src={kanumodal1img1} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={kanumodal1img2} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={kanumodal1img3} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={kanumodal1img4} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={kanumodal1img5} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={kanumodal1img6} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={kanumodal1img7} alt="First slide" /></Carousel.Item>
-
-                                    </Carousel>
-                                    <h1 className="text-center mt-3">OUR WORKS</h1>
-                                </Typography>
-                            </Box>
-                        </Modal>
-
-                        {/* modal 2 for kanuvai */}
-                        <Modal
-                            open={open3}
-                            onClose={handleClose3}
-                            aria-labelledby="modal-modal-title"
-                            aria-describedby="modal-modal-description"
-                            className="modal-main-yoga"
-                        >
-                            <Box sx={style}>
-                                <Typography id="modal-modal-title" variant="h6" component="h2">
-                                    <Carousel style={{ height: "500px", width: "500px" }}>
-
-                                        <Carousel.Item ><img className="d-block" src={kanumodal2img1} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={kanumodal2img2} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={kanumodal2img3} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={kanumodal2img4} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={kanumodal2img5} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={kanumodal2img6} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={kanumodal2img7} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={kanumodal2img8} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={kanumodal2img9} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={kanumodal2img10} alt="First slide" /></Carousel.Item>
-
-                                    </Carousel>
-                                    <h1 className="text-center mt-3">OUR WORKS</h1>
-                                </Typography>
-                            </Box>
-                        </Modal>
-
-                        {/* modal 3 for kanuvai */}
-                        <Modal
-                            open={open4}
-                            onClose={handleClose4}
-                            aria-labelledby="modal-modal-title"
-                            aria-describedby="modal-modal-description"
-                            className="modal-main-yoga"
-                        >
-                            <Box sx={style}>
-                                <Typography id="modal-modal-title" variant="h6" component="h2">
-                                    <Carousel style={{ height: "500px", width: "500px" }}>
-
-                                        <Carousel.Item ><img className="d-block" src={kanumodal3img1} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={kanumodal3img2} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={kanumodal3img3} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={kanumodal3img4} alt="First slide" /></Carousel.Item>
-                                     
-
-                                    </Carousel>
-                                    <h1 className="text-center mt-3">OUR WORKS</h1>
-                                </Typography>
-                            </Box>
-                        </Modal>
-
-                        {/* modal 4 for kanuvai */}
-                        <Modal
-                            open={open5}
-                            onClose={handleClose5}
-                            aria-labelledby="modal-modal-title"
-                            aria-describedby="modal-modal-description"
-                            className="modal-main-yoga"
-                        >
-                            <Box sx={style}>
-                                <Typography id="modal-modal-title" variant="h6" component="h2">
-                                    <Carousel style={{ height: "500px", width: "500px" }}>
-
-                                        <Carousel.Item ><img className="d-block" src={kanumodal4img1} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={kanumodal4img2} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={kanumodal4img3} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={kanumodal4img4} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={kanumodal4img5} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={kanumodal4img6} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={kanumodal4img7} alt="First slide" /></Carousel.Item>
-                                     
-
-                                    </Carousel>
-                                    <h1 className="text-center mt-3">OUR WORKS</h1>
-                                </Typography>
-                            </Box>
-                        </Modal>
-
-                        {/* modal 1 for manikaranpalayam */}
-                        <Modal
-                            open={open6}
-                            onClose={handleClose6}
-                            aria-labelledby="modal-modal-title"
-                            aria-describedby="modal-modal-description"
-                            className="modal-main-yoga"
-                        >
-                            <Box sx={style}>
-                                <Typography id="modal-modal-title" variant="h6" component="h2">
-                                    <Carousel style={{ height: "500px", width: "500px" }}>
-
-                                        <Carousel.Item ><img className="d-block" src={manimodal1img1} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={manimodal1img2} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={manimodal1img3} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={manimodal1img4} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={manimodal1img5} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={manimodal1img6} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={manimodal1img7} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={manimodal1img8} alt="First slide" /></Carousel.Item>
-                                        <Carousel.Item ><img className="d-block" src={manimodal1img9} alt="First slide" /></Carousel.Item>
-                                     
-
-                                    </Carousel>
-                                    <h1 className="text-center mt-3">OUR WORKS</h1>
-                                </Typography>
-                            </Box>
-                        </Modal>
-
                     </div>
-
-
 
 
 
                     {/* <!-- Upcoming Tab --> */}
                     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                         {/* <!-- Content for Upcoming Tab --> */}
+                        <ul class="nav nav-pills-2nd-tab-yoga" id="nestedTab" role="tablist">
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link-2nd-tab-yoga active" id="KANUVAI-tab" data-bs-toggle="tab" data-bs-target="#KANUVAI" type="button" role="tab" aria-controls="KANUVAI" aria-selected="false"><FontAwesomeIcon icon={faLocationDot} className='me-3' style={{ fontSize: "20px" }} />IDIKARAI</button>
+                            </li>
+                        </ul>
 
                         <div class="tab-pane fade show active" id="bhk2" role="tabpanel" aria-labelledby="bhk2-tab">
                             <div class="cards">
-                                <div class="card-item">
+                                <div class="card-item" style={{ cursor: "pointer" }}>
                                     <div class="card-body">
                                         <img class="card-img" src={upcomimg1} alt="" />
-                                        <span>2BHK Apartment</span>
+                                        <span>PLOTS</span>
                                         <p>Details for 2BHK Apartments...</p>
-                                        <div class="d-flex align-items-center">
-                                            <h5>Know More</h5>
-                                            <div class="oran-line ms-3"></div>
-                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="card-item" style={{ cursor: "pointer" }}>
+                                    <div class="card-body">
+                                        <img class="card-img" src={upcomimg2} alt="" />
+                                        <span>VILLAS - 2BHK</span>
+                                        <p>Details for 2BHK Apartments...</p>
+
+                                    </div>
+                                </div>
+                                <div class="card-item" style={{ cursor: "pointer" }}>
+                                    <div class="card-body">
+                                        <img class="card-img" src={upcomimg3} alt="" />
+                                        <span>VILLAS - 3BHK</span>
+                                        <p>Details for 3BHK Apartments...</p>
+
+                                    </div>
+                                </div>
+                                <div class="card-item" style={{ cursor: "pointer" }}>
+                                    <div class="card-body">
+                                        <img class="card-img" src={upcomimg4} alt="" />
+                                        <span>VILLAS - 4BHK</span>
+                                        <p>Details for 4BHK Apartments...</p>
+
                                     </div>
                                 </div>
 
@@ -802,9 +735,9 @@ const Projects = () => {
 
                         <div class="tab-pane fade show active" id="bhk2" role="tabpanel" aria-labelledby="bhk2-tab">
                             <div class="cards">
-                                <div class="card-item">
+                                <div class="card-item" onClick={handleOpen9}>
                                     <div class="card-body">
-                                        <img class="card-img" src={cardimg1thop} alt="" />
+                                        <img class="card-img" style={{ cursor: "pointer" }} src={cardimg1thop} alt="" />
                                         <span>3BHK</span>
                                         <p>THOPPAMPATTI</p>
                                         <div class="d-flex align-items-center">
@@ -813,9 +746,9 @@ const Projects = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-item">
+                                <div class="card-item" onClick={handleOpen10}>
                                     <div class="card-body">
-                                        <img class="card-img" src={cardimg2PNP} alt="" />
+                                        <img class="card-img" style={{ cursor: "pointer" }} src={cardimg2PNP} alt="" />
                                         <span>4BHK</span>
                                         <p>GAS  COMPANY  PERIYANAIKENPALAYAM</p>
                                         <div class="d-flex align-items-center">
@@ -824,44 +757,44 @@ const Projects = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-item">
+                                <div class="card-item" onClick={handleOpen11}>
                                     <div class="card-body">
-                                        <img class="card-img" src={cardimg3kathir} alt="" />
-                                        <span>4BHK</span>
-                                        <p>GAS  COMPANY  PERIYANAIKENPALAYAM</p>
+                                        <img class="card-img" style={{ cursor: "pointer" }} src={cardimg3kathir} alt="" />
+                                        <span>3BHK</span>
+                                        <p>KATHIRNAIKENPALAYAM</p>
                                         <div class="d-flex align-items-center">
                                             <h5>Know More</h5>
                                             <div class="oran-line ms-3"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-item">
+                                <div class="card-item" onClick={handleOpen12}>
                                     <div class="card-body">
-                                        <img class="card-img" src={cardimg4nsnp} alt="" />
+                                        <img class="card-img" style={{ cursor: "pointer" }} src={cardimg4nsnp} alt="" />
                                         <span>4BHK</span>
-                                        <p>GAS  COMPANY  PERIYANAIKENPALAYAM</p>
+                                        <p>NARASIMHANAIKENPALAYAM</p>
                                         <div class="d-flex align-items-center">
                                             <h5>Know More</h5>
                                             <div class="oran-line ms-3"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-item">
+                                <div class="card-item" onClick={handleOpen13} >
                                     <div class="card-body">
-                                        <img class="card-img" src={cardimg5app} alt="" />
-                                        <span>4BHK</span>
-                                        <p>GAS  COMPANY  PERIYANAIKENPALAYAM</p>
+                                        <img class="card-img" style={{ cursor: "pointer" }} src={cardimg5app} alt="" />
+                                        <span>3BHK</span>
+                                        <p>APPNAIKENPALAYAM</p>
                                         <div class="d-flex align-items-center">
                                             <h5>Know More</h5>
                                             <div class="oran-line ms-3"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-item">
+                                <div class="card-item" onClick={handleOpen14}>
                                     <div class="card-body">
-                                        <img class="card-img" src={cardimg6thud} alt="" />
-                                        <span>4BHK</span>
-                                        <p>GAS  COMPANY  PERIYANAIKENPALAYAM</p>
+                                        <img class="card-img" style={{ cursor: "pointer" }} src={cardimg6thud} alt="" />
+                                        <span>5BHK</span>
+                                        <p>THUDIYALUR</p>
                                         <div class="d-flex align-items-center">
                                             <h5>Know More</h5>
                                             <div class="oran-line ms-3"></div>
@@ -881,6 +814,386 @@ const Projects = () => {
 
 
             </section >
+
+
+
+            {/* LOCATIONS Tab Content for Modal */}
+
+            {/* ongoing */}
+            {/* modal 1 for thoppampatti */}
+            <Modal
+                open={open1}
+                onClose={handleClose1}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+                className="modal-main-yoga"
+            >
+                <Box sx={style}>
+                    <Typography id="modal-modal-title" variant="h6" component="h2">
+                        <Carousel style={{ height: "500px", width: "500px" }}>
+
+                            <Carousel.Item ><img className="d-block" src={thopmodalimg1} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={thopmodalimg2} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={thopmodalimg3} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={thopmodalimg4} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={thopmodalimg5} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={thopmodalimg6} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={thopmodalimg7} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={thopmodalimg8} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={thopmodalimg9} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={thopmodalimg10} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={thopmodalimg11} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={thopmodalimg12} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={thopmodalimg13} alt="First slide" /></Carousel.Item>
+
+                        </Carousel>
+                        <h1 className="text-center mt-3">OUR WORKS</h1>
+                    </Typography>
+                </Box>
+            </Modal>
+
+            {/* modal 1 for kanuvai */}
+            <Modal
+                open={open2}
+                onClose={handleClose2}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+                className="modal-main-yoga"
+            >
+                <Box sx={style}>
+                    <Typography id="modal-modal-title" variant="h6" component="h2">
+                        <Carousel style={{ height: "500px", width: "500px" }}>
+
+                            <Carousel.Item ><img className="d-block" src={kanumodal1img1} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kanumodal1img2} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kanumodal1img3} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kanumodal1img4} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kanumodal1img5} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kanumodal1img6} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kanumodal1img7} alt="First slide" /></Carousel.Item>
+
+                        </Carousel>
+                        <h1 className="text-center mt-3">OUR WORKS</h1>
+                    </Typography>
+                </Box>
+            </Modal>
+
+            {/* modal 2 for kanuvai */}
+            <Modal
+                open={open3}
+                onClose={handleClose3}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+                className="modal-main-yoga"
+            >
+                <Box sx={style}>
+                    <Typography id="modal-modal-title" variant="h6" component="h2">
+                        <Carousel style={{ height: "500px", width: "500px" }}>
+
+                            <Carousel.Item ><img className="d-block" src={kanumodal2img1} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kanumodal2img2} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kanumodal2img3} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kanumodal2img4} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kanumodal2img5} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kanumodal2img6} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kanumodal2img7} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kanumodal2img8} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kanumodal2img9} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kanumodal2img10} alt="First slide" /></Carousel.Item>
+
+                        </Carousel>
+                        <h1 className="text-center mt-3">OUR WORKS</h1>
+                    </Typography>
+                </Box>
+            </Modal>
+
+            {/* modal 3 for kanuvai */}
+            <Modal
+                open={open4}
+                onClose={handleClose4}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+                className="modal-main-yoga"
+            >
+                <Box sx={style}>
+                    <Typography id="modal-modal-title" variant="h6" component="h2">
+                        <Carousel style={{ height: "500px", width: "500px" }}>
+
+                            <Carousel.Item ><img className="d-block" src={kanumodal3img1} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kanumodal3img2} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kanumodal3img3} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kanumodal3img4} alt="First slide" /></Carousel.Item>
+
+
+                        </Carousel>
+                        <h1 className="text-center mt-3">OUR WORKS</h1>
+                    </Typography>
+                </Box>
+            </Modal>
+
+            {/* modal 4 for kanuvai */}
+            <Modal
+                open={open5}
+                onClose={handleClose5}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+                className="modal-main-yoga"
+            >
+                <Box sx={style}>
+                    <Typography id="modal-modal-title" variant="h6" component="h2">
+                        <Carousel style={{ height: "500px", width: "500px" }}>
+
+                            <Carousel.Item ><img className="d-block" src={kanumodal4img1} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kanumodal4img2} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kanumodal4img3} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kanumodal4img4} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kanumodal4img5} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kanumodal4img6} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kanumodal4img7} alt="First slide" /></Carousel.Item>
+
+
+                        </Carousel>
+                        <h1 className="text-center mt-3">OUR WORKS</h1>
+                    </Typography>
+                </Box>
+            </Modal>
+
+            {/* modal 1 for manikaranpalayam */}
+            <Modal
+                open={open6}
+                onClose={handleClose6}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+                className="modal-main-yoga"
+            >
+                <Box sx={style}>
+                    <Typography id="modal-modal-title" variant="h6" component="h2">
+                        <Carousel style={{ height: "500px", width: "500px" }}>
+
+                            <Carousel.Item ><img className="d-block" src={manimodal1img1} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={manimodal1img2} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={manimodal1img3} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={manimodal1img4} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={manimodal1img5} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={manimodal1img6} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={manimodal1img7} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={manimodal1img8} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={manimodal1img9} alt="First slide" /></Carousel.Item>
+
+
+                        </Carousel>
+                        <h1 className="text-center mt-3">OUR WORKS</h1>
+                    </Typography>
+                </Box>
+            </Modal>
+
+            {/* modal 1 for kathirnaikenpalayam */}
+            <Modal
+                open={open7}
+                onClose={handleClose7}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+                className="modal-main-yoga"
+            >
+                <Box sx={style}>
+                    <Typography id="modal-modal-title" variant="h6" component="h2">
+                        <Carousel style={{ height: "500px", width: "500px" }}>
+
+                            <Carousel.Item ><img className="d-block" src={kathirmodal1img1} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kathirmodal1img2} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kathirmodal1img3} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kathirmodal1img4} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kathirmodal1img5} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kathirmodal1img6} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kathirmodal1img7} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kathirmodal1img8} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kathirmodal1img9} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kathirmodal1img10} alt="First slide" /></Carousel.Item>
+
+
+                        </Carousel>
+                        <h1 className="text-center mt-3">OUR WORKS</h1>
+                    </Typography>
+                </Box>
+            </Modal>
+
+
+            {/* UPCOMING */}
+            {/* modal 1 for IDIKARAI */}
+
+
+
+            {/* COMPLETED */}
+            {/* MODAL 1 FOR THOPPAMPATTI */}
+            <Modal
+                open={open9}
+                onClose={handleClose9}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+                className="modal-main-yoga"
+            >
+                <Box sx={style}>
+                    <Typography id="modal-modal-title" variant="h6" component="h2">
+                        <Carousel style={{ height: "500px", width: "500px" }}>
+
+                            <Carousel.Item ><img className="d-block" src={thopmodalcom1img1} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={thopmodalcom1img2} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={thopmodalcom1img3} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={thopmodalcom1img4} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={thopmodalcom1img5} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={thopmodalcom1img6} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={thopmodalcom1img7} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={thopmodalcom1img8} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={thopmodalcom1img9} alt="First slide" /></Carousel.Item>
+
+                        </Carousel>
+                        <h1 className="text-center mt-3">OUR WORKS</h1>
+                    </Typography>
+                </Box>
+            </Modal>
+
+            {/* MODAL 2 FOR periyanaickenpalayam */}
+            <Modal
+                open={open10}
+                onClose={handleClose10}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+                className="modal-main-yoga"
+            >
+                <Box sx={style}>
+                    <Typography id="modal-modal-title" variant="h6" component="h2">
+                        <Carousel style={{ height: "500px", width: "500px" }}>
+
+                            <Carousel.Item ><img className="d-block" src={pnpmodal1comimg1} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={pnpmodal1comimg2} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={pnpmodal1comimg3} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={pnpmodal1comimg4} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={pnpmodal1comimg5} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={pnpmodal1comimg6} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={pnpmodal1comimg7} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={pnpmodal1comimg8} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={pnpmodal1comimg9} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={pnpmodal1comimg10} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={pnpmodal1comimg11} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={pnpmodal1comimg12} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={pnpmodal1comimg13} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={pnpmodal1comimg14} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={pnpmodal1comimg15} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={pnpmodal1comimg16} alt="First slide" /></Carousel.Item>
+
+                        </Carousel>
+                        <h1 className="text-center mt-3">OUR WORKS</h1>
+                    </Typography>
+                </Box>
+            </Modal>
+
+            {/* MODAL 3 FOR KATHIRNAIKENPALYAM */}
+            <Modal
+                open={open11}
+                onClose={handleClose11}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+                className="modal-main-yoga"
+            >
+                <Box sx={style}>
+                    <Typography id="modal-modal-title" variant="h6" component="h2">
+                        <Carousel style={{ height: "500px", width: "500px" }}>
+
+                            <Carousel.Item ><img className="d-block" src={kathirmodal1com1} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kathirmodal1com2} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kathirmodal1com3} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kathirmodal1com4} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={kathirmodal1com5} alt="First slide" /></Carousel.Item>
+
+
+                        </Carousel>
+                        <h1 className="text-center mt-3">OUR WORKS</h1>
+                    </Typography>
+                </Box>
+            </Modal>
+
+            {/* MODAL 4 FOR Narasimhanaikenpalayam */}
+            <Modal
+                open={open12}
+                onClose={handleClose12}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+                className="modal-main-yoga"
+            >
+                <Box sx={style}>
+                    <Typography id="modal-modal-title" variant="h6" component="h2">
+                        <Carousel style={{ height: "500px", width: "500px" }}>
+
+                            <Carousel.Item ><img className="d-block" src={narasimodal1com1} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={narasimodal1com2} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={narasimodal1com3} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={narasimodal1com4} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={narasimodal1com5} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={narasimodal1com6} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={narasimodal1com7} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={narasimodal1com8} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={narasimodal1com9} alt="First slide" /></Carousel.Item>
+
+
+                        </Carousel>
+                        <h1 className="text-center mt-3">OUR WORKS</h1>
+                    </Typography>
+                </Box>
+            </Modal>
+
+            {/* MODAL 5 FOR APPNAIKENPALAYAM */}
+            <Modal
+                open={open13}
+                onClose={handleClose13}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+                className="modal-main-yoga"
+            >
+                <Box sx={style}>
+                    <Typography id="modal-modal-title" variant="h6" component="h2">
+                        <Carousel style={{ height: "500px", width: "500px" }}>
+
+                            <Carousel.Item ><img className="d-block" src={appmodal1img1} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={appmodal1img2} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={appmodal1img3} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={appmodal1img4} alt="First slide" /></Carousel.Item>
+
+
+                        </Carousel>
+                        <h1 className="text-center mt-3">OUR WORKS</h1>
+                    </Typography>
+                </Box>
+            </Modal>
+
+            {/* MODAL 5 FOR APPNAIKENPALAYAM */}
+            <Modal
+                open={open14}
+                onClose={handleClose14}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+                className="modal-main-yoga"
+            >
+                <Box sx={style}>
+                    <Typography id="modal-modal-title" variant="h6" component="h2">
+                        <Carousel style={{ height: "500px", width: "500px" }}>
+
+                            <Carousel.Item ><img className="d-block" src={thudimodal1img1} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={thudimodal1img2} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={thudimodal1img3} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={thudimodal1img4} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={thudimodal1img5} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={thudimodal1img6} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={thudimodal1img7} alt="First slide" /></Carousel.Item>
+                            <Carousel.Item ><img className="d-block" src={thudimodal1img8} alt="First slide" /></Carousel.Item>
+
+
+                        </Carousel>
+                        <h1 className="text-center mt-3">OUR WORKS</h1>
+                    </Typography>
+                </Box>
+            </Modal>
+
+
 
         </>
     )
