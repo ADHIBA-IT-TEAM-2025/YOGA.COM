@@ -4,7 +4,7 @@ import whatwedoabout from "../IMAGE/whatwedo=about.png"
 import trustpartner from "../IMAGE/YOGALOGO-1.png"
 import footerlogo from '../IMAGE/OMSAKTHI-2.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRightToCity, faEnvelope, faHouseLaptop, faLayerGroup, faPeopleRoof, faPersonDigging, faPhone, faPuzzlePiece ,faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRightToCity, faEnvelope, faHouseLaptop, faLayerGroup, faPeopleRoof, faPersonDigging, faPhone, faPuzzlePiece, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faLinkedin, faTwitter, faWhatsapp, faXTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import banner1 from '../IMAGE/landing-banner-yoga.png'
 import { motion, useInView } from "framer-motion";
@@ -16,26 +16,24 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import Carousel from 'react-bootstrap/Carousel';
 // VIDEOOOOOOOOOO
-import VIDEOYOGA1 from "../IMAGE/4 POINTS - YOGA PROP.mp4"
-import VIDEOYOGA2 from "../IMAGE/about-video-1-yoga.mp4"
-import VIDEOYOGA3 from "../IMAGE/videos.mp4"
+
 // thoppampatti
 // card
 import thopcardimg3bhk2 from "../images/IMAGES/thoppampatti/3bhk-image-1.png"
 // 3bhk modalimages
-import thopmodalimg1 from     "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/2.png"
-import thopmodalimg2 from     "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/3.png"
-import thopmodalimg3 from     "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/4.png"
-import thopmodalimg4 from     "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/5.png"
-import thopmodalimg5 from     "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/6.png"
-import thopmodalimg6 from     "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/7.png"
-import thopmodalimg7 from     "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/8.png"
-import thopmodalimg8 from     "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/9.png"
-import thopmodalimg9 from     "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/10.png"
-import thopmodalimg10 from    "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/11.png"
-import thopmodalimg11 from    "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/12.png"
-import thopmodalimg12 from    "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/13.png"
-import thopmodalimg13 from    "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/14.png"
+import thopmodalimg1 from "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/2.png"
+import thopmodalimg2 from "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/3.png"
+import thopmodalimg3 from "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/4.png"
+import thopmodalimg4 from "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/5.png"
+import thopmodalimg5 from "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/6.png"
+import thopmodalimg6 from "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/7.png"
+import thopmodalimg7 from "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/8.png"
+import thopmodalimg8 from "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/9.png"
+import thopmodalimg9 from "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/10.png"
+import thopmodalimg10 from "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/11.png"
+import thopmodalimg11 from "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/12.png"
+import thopmodalimg12 from "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/13.png"
+import thopmodalimg13 from "../images/IMAGES/thoppampatti/Ongoing 3bhk   Thoppamppati/14.png"
 // kanuvai
 // card
 import kanucardimg2bhk1 from "../images/IMAGES/kanuvai/card-image-2bhk-1.png"
@@ -181,7 +179,7 @@ const style = {
     left: '50%',
     transform: 'translate(-50%, -50%)',
     bgcolor: 'white',
-    p: 4,
+    p: 3,
     border: "none",
     outline: "none",
     borderRadius: "10px"
@@ -253,7 +251,7 @@ const Partner = () => {
                             <div class="box4">
                                 <div className="fourth-box-contents">
                                     <h3>HOME IS WHERE <br />THE HEART IS</h3>
-                                    <p className="col-lg-8 mt-3 "><span>“</span>Home is more than just a physical structure; it embodies comfort, safety, and a sense of belonging. It’s a space filled with memories and relationships, representing the emotional significance that shapes our lives. At Yoga Property, we understand that a home is where individuals feel secure and connected. Explore our residential plots and community projects to find the perfect place that reflects your unique experiences.<span>”</span></p>
+                                    <p className="col-lg-8 mt-3 "><span>“</span>Home is more than just a physical structure; it embodies comfort, safety, and a sense of belonging. It’s a space filled with memories and relationships, representing the el significance that shapes our lives. At Yoga Property, we understand that a home is where individuals feel secure and connected. Explore our residential plots and community projects to find the perfect place that reflects your unique experiences.<span>”</span></p>
                                 </div>
                             </div>
 
@@ -289,27 +287,6 @@ const Whatwedo = () => {
                             </p>
                         </div>
                     </div>
-
-                    <section class="HoverVideo container mt-5">
-                        <div class="HoverVideo__wrapper mb-5">
-                            <div class="HoverVideo__videoBox">
-                                <video class="video" autoPlay loop preload="yes" muted>
-                                    <source src={VIDEOYOGA1} type="video/mp4" />
-                                </video>
-                            </div>
-                            <div class="HoverVideo__videoBox">
-                                <video class="video" autoPlay loop preload="yes" muted>
-                                    <source src={VIDEOYOGA2} type="video/mp4" />
-                                </video>
-                            </div>
-                            <div class="HoverVideo__videoBox">
-                                <video class="video" autoPlay loop preload="yes" muted>
-                                    <source src={VIDEOYOGA3} type="video/mp4" />
-                                </video>
-                            </div>
-                        </div>
-                    </section>
-
                 </section>
 
                 <div class=" sec-whatwedo-yoga">
@@ -362,54 +339,54 @@ const Whatwedo = () => {
 
 const Projects = () => {
 
-     // modal images onclick function
-     const [open1, setOpen1] = useState(false);
-     const [open2, setOpen2] = useState(false);
-     const [open3, setOpen3] = useState(false);
-     const [open4, setOpen4] = useState(false);
-     const [open5, setOpen5] = useState(false);
-     const [open6, setOpen6] = useState(false);
-     const [open7, setOpen7] = useState(false);
-     const [open9, setOpen9] = useState(false);
-     const [open10, setOpen10] = useState(false);
-     const [open11, setOpen11] = useState(false);
-     const [open12, setOpen12] = useState(false);
-     const [open13, setOpen13] = useState(false);
-     const [open14, setOpen14] = useState(false);
- 
-     const handleOpen1 = () => setOpen1(true);
-     const handleClose1 = () => setOpen1(false);
-     const handleOpen2 = () => setOpen2(true);
-     const handleClose2 = () => setOpen2(false);
-     const handleOpen3 = () => setOpen3(true);
-     const handleClose3 = () => setOpen3(false);
-     const handleOpen4 = () => setOpen4(true);
-     const handleClose4 = () => setOpen4(false);
-     const handleOpen5 = () => setOpen5(true);
-     const handleClose5 = () => setOpen5(false);
-     const handleOpen6 = () => setOpen6(true);
-     const handleClose6 = () => setOpen6(false);
-     const handleOpen7 = () => setOpen7(true);
-     const handleClose7 = () => setOpen7(false);
-     const handleOpen9 = () => setOpen9(true);
-     const handleClose9 = () => setOpen9(false);
-     const handleOpen10 = () => setOpen10(true);
-     const handleClose10 = () => setOpen10(false);
-     const handleOpen11 = () => setOpen11(true);
-     const handleClose11 = () => setOpen11(false);
-     const handleOpen12 = () => setOpen12(true);
-     const handleClose12 = () => setOpen12(false);
-     const handleOpen13 = () => setOpen13(true);
-     const handleClose13 = () => setOpen13(false);
-     const handleOpen14 = () => setOpen14(true);
-     const handleClose14 = () => setOpen14(false);
- 
- 
- 
+    // modal images onclick function
+    const [open1, setOpen1] = useState(false);
+    const [open2, setOpen2] = useState(false);
+    const [open3, setOpen3] = useState(false);
+    const [open4, setOpen4] = useState(false);
+    const [open5, setOpen5] = useState(false);
+    const [open6, setOpen6] = useState(false);
+    const [open7, setOpen7] = useState(false);
+    const [open9, setOpen9] = useState(false);
+    const [open10, setOpen10] = useState(false);
+    const [open11, setOpen11] = useState(false);
+    const [open12, setOpen12] = useState(false);
+    const [open13, setOpen13] = useState(false);
+    const [open14, setOpen14] = useState(false);
+
+    const handleOpen1 = () => setOpen1(true);
+    const handleClose1 = () => setOpen1(false);
+    const handleOpen2 = () => setOpen2(true);
+    const handleClose2 = () => setOpen2(false);
+    const handleOpen3 = () => setOpen3(true);
+    const handleClose3 = () => setOpen3(false);
+    const handleOpen4 = () => setOpen4(true);
+    const handleClose4 = () => setOpen4(false);
+    const handleOpen5 = () => setOpen5(true);
+    const handleClose5 = () => setOpen5(false);
+    const handleOpen6 = () => setOpen6(true);
+    const handleClose6 = () => setOpen6(false);
+    const handleOpen7 = () => setOpen7(true);
+    const handleClose7 = () => setOpen7(false);
+    const handleOpen9 = () => setOpen9(true);
+    const handleClose9 = () => setOpen9(false);
+    const handleOpen10 = () => setOpen10(true);
+    const handleClose10 = () => setOpen10(false);
+    const handleOpen11 = () => setOpen11(true);
+    const handleClose11 = () => setOpen11(false);
+    const handleOpen12 = () => setOpen12(true);
+    const handleClose12 = () => setOpen12(false);
+    const handleOpen13 = () => setOpen13(true);
+    const handleClose13 = () => setOpen13(false);
+    const handleOpen14 = () => setOpen14(true);
+    const handleClose14 = () => setOpen14(false);
+
+
+
 
     return (
         <>
-          <section className=" tab-section-yoga ">
+            <section className=" tab-section-yoga ">
                 <div className=" dream-house-heading">
                     <h1>SWEET HOME</h1>
                 </div>
@@ -830,7 +807,7 @@ const Projects = () => {
             >
                 <Box sx={style}>
                     <Typography id="modal-modal-title" variant="h6" component="h2">
-                        <Carousel style={{ height: "500px", width: "500px" }}>
+                        <Carousel>
 
                             <Carousel.Item ><img className="d-block" src={thopmodalimg1} alt="First slide" /></Carousel.Item>
                             <Carousel.Item ><img className="d-block" src={thopmodalimg2} alt="First slide" /></Carousel.Item>
@@ -862,7 +839,7 @@ const Projects = () => {
             >
                 <Box sx={style}>
                     <Typography id="modal-modal-title" variant="h6" component="h2">
-                        <Carousel style={{ height: "500px", width: "500px" }}>
+                        <Carousel>
 
                             <Carousel.Item ><img className="d-block" src={kanumodal1img1} alt="First slide" /></Carousel.Item>
                             <Carousel.Item ><img className="d-block" src={kanumodal1img2} alt="First slide" /></Carousel.Item>
@@ -888,7 +865,7 @@ const Projects = () => {
             >
                 <Box sx={style}>
                     <Typography id="modal-modal-title" variant="h6" component="h2">
-                        <Carousel style={{ height: "500px", width: "500px" }}>
+                        <Carousel>
 
                             <Carousel.Item ><img className="d-block" src={kanumodal2img1} alt="First slide" /></Carousel.Item>
                             <Carousel.Item ><img className="d-block" src={kanumodal2img2} alt="First slide" /></Carousel.Item>
@@ -917,7 +894,7 @@ const Projects = () => {
             >
                 <Box sx={style}>
                     <Typography id="modal-modal-title" variant="h6" component="h2">
-                        <Carousel style={{ height: "500px", width: "500px" }}>
+                        <Carousel>
 
                             <Carousel.Item ><img className="d-block" src={kanumodal3img1} alt="First slide" /></Carousel.Item>
                             <Carousel.Item ><img className="d-block" src={kanumodal3img2} alt="First slide" /></Carousel.Item>
@@ -941,7 +918,7 @@ const Projects = () => {
             >
                 <Box sx={style}>
                     <Typography id="modal-modal-title" variant="h6" component="h2">
-                        <Carousel style={{ height: "500px", width: "500px" }}>
+                        <Carousel>
 
                             <Carousel.Item ><img className="d-block" src={kanumodal4img1} alt="First slide" /></Carousel.Item>
                             <Carousel.Item ><img className="d-block" src={kanumodal4img2} alt="First slide" /></Carousel.Item>
@@ -968,7 +945,7 @@ const Projects = () => {
             >
                 <Box sx={style}>
                     <Typography id="modal-modal-title" variant="h6" component="h2">
-                        <Carousel style={{ height: "500px", width: "500px" }}>
+                        <Carousel>
 
                             <Carousel.Item ><img className="d-block" src={manimodal1img1} alt="First slide" /></Carousel.Item>
                             <Carousel.Item ><img className="d-block" src={manimodal1img2} alt="First slide" /></Carousel.Item>
@@ -997,7 +974,7 @@ const Projects = () => {
             >
                 <Box sx={style}>
                     <Typography id="modal-modal-title" variant="h6" component="h2">
-                        <Carousel style={{ height: "500px", width: "500px" }}>
+                        <Carousel>
 
                             <Carousel.Item ><img className="d-block" src={kathirmodal1img1} alt="First slide" /></Carousel.Item>
                             <Carousel.Item ><img className="d-block" src={kathirmodal1img2} alt="First slide" /></Carousel.Item>
@@ -1034,7 +1011,7 @@ const Projects = () => {
             >
                 <Box sx={style}>
                     <Typography id="modal-modal-title" variant="h6" component="h2">
-                        <Carousel style={{ height: "500px", width: "500px" }}>
+                        <Carousel>
 
                             <Carousel.Item ><img className="d-block" src={thopmodalcom1img1} alt="First slide" /></Carousel.Item>
                             <Carousel.Item ><img className="d-block" src={thopmodalcom1img2} alt="First slide" /></Carousel.Item>
@@ -1062,7 +1039,7 @@ const Projects = () => {
             >
                 <Box sx={style}>
                     <Typography id="modal-modal-title" variant="h6" component="h2">
-                        <Carousel style={{ height: "500px", width: "500px" }}>
+                        <Carousel>
 
                             <Carousel.Item ><img className="d-block" src={pnpmodal1comimg1} alt="First slide" /></Carousel.Item>
                             <Carousel.Item ><img className="d-block" src={pnpmodal1comimg2} alt="First slide" /></Carousel.Item>
@@ -1097,7 +1074,7 @@ const Projects = () => {
             >
                 <Box sx={style}>
                     <Typography id="modal-modal-title" variant="h6" component="h2">
-                        <Carousel style={{ height: "500px", width: "500px" }}>
+                        <Carousel>
 
                             <Carousel.Item ><img className="d-block" src={kathirmodal1com1} alt="First slide" /></Carousel.Item>
                             <Carousel.Item ><img className="d-block" src={kathirmodal1com2} alt="First slide" /></Carousel.Item>
@@ -1122,7 +1099,7 @@ const Projects = () => {
             >
                 <Box sx={style}>
                     <Typography id="modal-modal-title" variant="h6" component="h2">
-                        <Carousel style={{ height: "500px", width: "500px" }}>
+                        <Carousel>
 
                             <Carousel.Item ><img className="d-block" src={narasimodal1com1} alt="First slide" /></Carousel.Item>
                             <Carousel.Item ><img className="d-block" src={narasimodal1com2} alt="First slide" /></Carousel.Item>
@@ -1151,7 +1128,7 @@ const Projects = () => {
             >
                 <Box sx={style}>
                     <Typography id="modal-modal-title" variant="h6" component="h2">
-                        <Carousel style={{ height: "500px", width: "500px" }}>
+                        <Carousel>
 
                             <Carousel.Item ><img className="d-block" src={appmodal1img1} alt="First slide" /></Carousel.Item>
                             <Carousel.Item ><img className="d-block" src={appmodal1img2} alt="First slide" /></Carousel.Item>
@@ -1175,7 +1152,7 @@ const Projects = () => {
             >
                 <Box sx={style}>
                     <Typography id="modal-modal-title" variant="h6" component="h2">
-                        <Carousel style={{ height: "500px", width: "500px" }}>
+                        <Carousel>
 
                             <Carousel.Item ><img className="d-block" src={thudimodal1img1} alt="First slide" /></Carousel.Item>
                             <Carousel.Item ><img className="d-block" src={thudimodal1img2} alt="First slide" /></Carousel.Item>
@@ -1216,7 +1193,7 @@ const Contactus = () => {
 
             <section id="Contactus">
                 <div className="container text-div-about-yoga " >
-                    <div className="container dream-house-heading">
+                    <div className="container dream-house-heading text-center mt-3">
                         <h1>CONTACT US</h1>
                     </div>
                     <p className="text-center">
@@ -1232,7 +1209,7 @@ const Contactus = () => {
             <section className="container-fluid footer-yoga" style={{ background: "rgba(237, 114, 53, 0.15)" }}>
                 <div className="col-12" style={{ padding: "60px 0px 10px 0px" }}>
                     <div className="row">
-                        <motion.div
+                        <div
                             ref={ref1}
                             className="col-lg-3 footer-logo-yoga mb-3"
                             initial={{ opacity: 0, y: 50 }}
@@ -1240,9 +1217,9 @@ const Contactus = () => {
                             transition={{ duration: 1, delay: 0.2 }}
                         >
                             <img src={footerlogo} className="img-fluid" style={{ height: "170px" }} />
-                        </motion.div>
+                        </div>
 
-                        <motion.div
+                        <div
                             ref={ref2}
                             className="col-lg-2 footer-corp-yoga mb-3"
                             initial={{ opacity: 0, y: 50 }}
@@ -1253,16 +1230,16 @@ const Contactus = () => {
                             <p className="mt-3">
                                 #7/7 Mettupalayam main road,<br />
                                 Opposite vinayagar temple,<br />
-                                Nsn Palayam,<br />
-                                Coimbatore Pin 641031.
+                                Narasimhanaickenpalayam,<br />
+                                Coimbatore - 641031.
                             </p>
                             <p><FontAwesomeIcon icon={faEnvelope} className="me-3" />yogaproperty@gmail.com</p>
                             <button type="button" className="btn btn-outline-warning yoga-footer-call-btn mt-3">
                                 <FontAwesomeIcon icon={faPhone} className="me-3" />7708871117
                             </button>
-                        </motion.div>
+                        </div>
 
-                        <motion.div
+                        <div
                             ref={ref3}
                             className="col-lg-2 footer-navi-yoga mb-3"
                             initial={{ opacity: 0, y: 50 }}
@@ -1274,9 +1251,9 @@ const Contactus = () => {
                             <p>PROJECTS</p>
                             <p>TERMS & CONDITIONS</p>
                             <p>CONTACT US</p>
-                        </motion.div>
+                        </div>
 
-                        <motion.div
+                        <div
                             ref={ref4}
                             className="col-lg-2 footer-followus-yoga mb-3"
                             initial={{ opacity: 0, y: 50 }}
@@ -1284,7 +1261,7 @@ const Contactus = () => {
                             transition={{ duration: 1, delay: 0.8 }}
                         >
                             <h3>FOLLOW US</h3>
-                            <div className="d-flex">
+                            <div className="d-flex mt-3">
                                 <a
                                     href="https://www.facebook.com/yogaproperties?mibextid=LQQJ4d"
                                     className="me-3 col-auto"
@@ -1349,9 +1326,9 @@ const Contactus = () => {
                                     <FontAwesomeIcon icon={faWhatsapp} />
                                 </a>
                             </div>
-                        </motion.div>
+                        </div>
 
-                        <motion.div
+                        <div
                             ref={ref1}
                             className="col-lg-3 footer-logo-yoga mb-3"
                             initial={{ opacity: 0, y: 50 }}
@@ -1359,7 +1336,7 @@ const Contactus = () => {
                             transition={{ duration: 1, delay: 0.2 }}
                         >
                             <img src={trustpartner} className="img-fluid" style={{ height: "170px" }} />
-                        </motion.div>
+                        </div>
 
                     </div>
                 </div>

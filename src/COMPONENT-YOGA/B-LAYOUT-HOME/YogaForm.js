@@ -63,9 +63,9 @@ const YogaForm = () => {
               className="img-fluid"
             />
           </div>
-          <div className="col-md-6 mt-5 p-3 ">
-            <span className=''> Please, fill in the form and then Click the Send button. <br />
-              Fields marked with <span className="required">*</span> are mandatory fields</span>
+          <div className="col-md-6 mt-5">
+            <span className=''> <span style={{color:"#ED7235", fontSize:"1.25em"}}>P&nbsp;</span>lease, fill in the form and then Click the Send button. <br />
+              Marked <span className="required">*</span> are mandatory fields</span>
             <form onSubmit={sendEmail} className="d-flex flex-column mt-3 ">
               <div className="form-group col-lg-6 ">
                 <label className="mb-2"> Name <span className="required">*</span></label>
@@ -75,7 +75,7 @@ const YogaForm = () => {
                   className="form-control mb-3"
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder='eg: Stilinski'
+                  placeholder='Eg: kirshnapradaap'
                   required
                 />
               </div>
@@ -88,7 +88,7 @@ const YogaForm = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  placeholder='eg: Stilinski@gmail.com'
+                  placeholder='Eg: yogaproperty@gmail.com'
                 />
               </div>
               <div className="form-group col-lg-6  ">
@@ -100,7 +100,7 @@ const YogaForm = () => {
                   value={formData.number}
                   onChange={handleChange}
                   required
-                  placeholder='eg: 9999888810'
+                  placeholder='Eg: 9999999999'
                 />
               </div>
               <div className="form-group col-lg-6 mt-3">
@@ -146,7 +146,15 @@ const YogaForm = () => {
 
               <div className="custom-dropdown col-lg-6 mt-3">
                 <div className="custom-select">
-                  <div className="selected-option">{formData.classType || "Location*"}</div>
+                  <div
+                    className="selected-option"
+                    style={{
+                      color: formData.classType ? "black" : "#bbbbbb", // Change "red" to your desired color
+                    }}
+                  >
+                    {formData.classType || "Location*"}
+                  </div>
+
                   <ul className="options-list">
                     <li onClick={() => handleSelect('Coimbatore')}>Coimbatore</li>
                   </ul>

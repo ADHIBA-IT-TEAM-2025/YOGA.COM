@@ -597,6 +597,7 @@
   .card-item {
     width: calc(100% / 12 * 6);
   }
+
 }
 
 /* ===== == = === 56.25em (900px) === = == ===== */
@@ -657,6 +658,9 @@
     border-left: 3px solid #ED7235;
     padding-left: 15px;
     margin: 30px 0px;
+  }
+  .tab-section-yoga {
+    padding: 5px;
   }
 }
 
@@ -901,7 +905,8 @@
   margin: 0px auto;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; /* This will ensure videos wrap to the next row */
+  flex-wrap: wrap;
+  /* This will ensure videos wrap to the next row */
 }
 
 .HoverVideo__videoBox {
@@ -924,7 +929,8 @@
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 992px) {
   .HoverVideo__videoBox {
-    width: 48%; /* Adjust width to fit two videos per row */
+    width: 48%;
+    /* Adjust width to fit two videos per row */
     margin-bottom: 20px;
   }
 }
@@ -932,7 +938,8 @@
 /* Small devices (phones, less than 768px) */
 @media (max-width: 768px) {
   .HoverVideo__videoBox {
-    width: 100%; /* One video per row */
+    width: 100%;
+    /* One video per row */
     margin-bottom: 20px;
   }
 }
@@ -972,14 +979,14 @@
 /* ===== == = === 37.5em (600px) === = == ===== */
 @media all and (min-width: 600px) {
   .card-item {
-      width: calc(100% / 12 * 6);
+    width: calc(100% / 12 * 6);
   }
 }
 
 /* ===== == = === 56.25em (900px) === = == ===== */
 @media all and (min-width: 900px) {
   .card-item {
-      width: calc(100% / 12 * 4);
+    width: calc(100% / 12 * 4);
   }
 }
 
@@ -1025,7 +1032,7 @@
 
 #modal-modal-title img {
   border-radius: 10px;
-  max-height: 500px;
+  height: 500px;
   width: 500px;
 }
 
@@ -1036,66 +1043,67 @@
 
 @media (max-width: 576px) {
   .dream-house-heading h1 {
-      font-size: 35px;
-      margin-top: 5px;
+    font-size: 35px;
+    margin-top: 5px;
   }
 
   .tab-heading-yoga h3 {
-      font-size: 17px;
-      border-left: 3px solid #ED7235;
-      padding-left: 15px;
-      margin: 30px 0px;
+    font-size: 17px;
+    border-left: 3px solid #ED7235;
+    padding-left: 15px;
+    margin: 30px 0px;
   }
 
 
-    #modal-modal-title img {
-        border-radius: 10px;
-        max-height: 500px;
-        width: 300px;
-    }
+
+  #modal-modal-title img {
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+  }
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
 
   .dream-house-heading h1 {
-      font-size: 55px;
-      margin-top: 5px;
+    font-size: 55px;
+    margin-top: 5px;
   }
 
   .tab-heading-yoga h3 {
-      font-size: 30px;
-      border-left: 3px solid #ED7235;
-      padding-left: 15px;
-      margin: 20px 0px;
+    font-size: 30px;
+    border-left: 3px solid #ED7235;
+    padding-left: 15px;
+    margin: 20px 0px;
   }
 
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
   .dream-house-heading h1 {
-      font-size: 50px;
-      margin-top: 5px;
+    font-size: 50px;
+    margin-top: 5px;
   }
 
   .tab-heading-yoga h3 {
-      font-size: 30px;
-      border-left: 3px solid #ED7235;
-      padding-left: 15px;
-      margin: 25px 0px;
+    font-size: 30px;
+    border-left: 3px solid #ED7235;
+    padding-left: 15px;
+    margin: 25px 0px;
   }
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
   .dream-house-heading h1 {
-      font-size: 100px;
-      color: #cccccc;
+    font-size: 100px;
+    color: #cccccc;
   }
 
   .tab-heading-yoga h3 {
-      font-size: 35px;
-      border-left: 3px solid #ED7235;
-      padding-left: 15px;
-      margin: 20px 0px;
+    font-size: 35px;
+    border-left: 3px solid #ED7235;
+    padding-left: 15px;
+    margin: 20px 0px;
   }
 }
 
@@ -1260,9 +1268,7 @@
   /* Optional: Adds a semi-transparent dark background */
 }
 
-
-
-
-
-
-
+/* * Custom styles for the Carousel container */ 
+.carousel {
+    max-width: 500px; 
+  }
