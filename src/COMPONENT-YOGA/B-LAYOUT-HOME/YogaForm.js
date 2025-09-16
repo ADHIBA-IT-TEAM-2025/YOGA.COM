@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
-import img from '../IMAGE/form-yoga.png';
-import mobileImg from '../IMAGE/form-yoga.png';
 import './YogaForm.css'
 
 
@@ -58,29 +56,40 @@ const YogaForm = () => {
         <div className="row">
           <div className="col-md-6">
             <img
-              src={isMobile ? mobileImg : img}
+              src={isMobile ? '/IMAGE/form-yoga.webp' : '/IMAGE/form-yoga.webp'}
               alt="img"
               className="img-fluid"
             />
           </div>
           <div className="col-md-6 mt-5">
-            <span className=''> <span style={{color:"#ED7235", fontSize:"1.25em"}}>P&nbsp;</span>lease, fill in the form and then Click the Send button. <br />
-              Marked <span className="required">*</span> are mandatory fields</span>
+            <span className="">
+              {' '}
+              <span style={{ color: '#ED7235', fontSize: '1.25em' }}>
+                P&nbsp;
+              </span>
+              lease, fill in the form and then Click the Send button. <br />
+              Marked <span className="required">*</span> are mandatory fields
+            </span>
             <form onSubmit={sendEmail} className="d-flex flex-column mt-3 ">
               <div className="form-group col-lg-6 ">
-                <label className="mb-2"> Name <span className="required">*</span></label>
+                <label className="mb-2">
+                  {' '}
+                  Name <span className="required">*</span>
+                </label>
                 <input
                   type="text"
                   name="name"
                   className="form-control mb-3"
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder='Eg: kirshnapradaap'
+                  placeholder="Eg: kirshnapradaap"
                   required
                 />
               </div>
               <div className="form-group col-lg-6 ">
-                <label className="mb-2">Email <span className="required">*</span></label>
+                <label className="mb-2">
+                  Email <span className="required">*</span>
+                </label>
                 <input
                   type="email"
                   name="email"
@@ -88,11 +97,13 @@ const YogaForm = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  placeholder='Eg: yogaproperty@gmail.com'
+                  placeholder="Eg: yogaproperty@gmail.com"
                 />
               </div>
               <div className="form-group col-lg-6  ">
-                <label className="mb-2">Phone <span className="required">*</span></label>
+                <label className="mb-2">
+                  Phone <span className="required">*</span>
+                </label>
                 <input
                   type="tel"
                   name="number"
@@ -100,7 +111,7 @@ const YogaForm = () => {
                   value={formData.number}
                   onChange={handleChange}
                   required
-                  placeholder='Eg: 9999999999'
+                  placeholder="Eg: 9999999999"
                 />
               </div>
               <div className="form-group col-lg-6 mt-3">
@@ -149,14 +160,16 @@ const YogaForm = () => {
                   <div
                     className="selected-option"
                     style={{
-                      color: formData.classType ? "black" : "#bbbbbb", // Change "red" to your desired color
+                      color: formData.classType ? 'black' : '#bbbbbb', // Change "red" to your desired color
                     }}
                   >
-                    {formData.classType || "Location*"}
+                    {formData.classType || 'Location*'}
                   </div>
 
                   <ul className="options-list">
-                    <li onClick={() => handleSelect('Coimbatore')}>Coimbatore</li>
+                    <li onClick={() => handleSelect('Coimbatore')}>
+                      Coimbatore
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -167,7 +180,9 @@ const YogaForm = () => {
                 name="classType"
                 value={formData.classType}
               />
-              <button type="submit" className="button-yoga mt-3">SUBMIT</button>
+              <button type="submit" className="button-yoga mt-3">
+                SUBMIT
+              </button>
             </form>
           </div>
         </div>

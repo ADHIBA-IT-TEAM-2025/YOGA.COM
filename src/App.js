@@ -2,23 +2,24 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import Layout from './COMPONENT-YOGA/A-LAYOUT-NAV/nav';
-import { BrowserRouter as Router, Routes, Route, HashRouter } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Contact from './COMPONENT-YOGA/A-LAYOUT-NAV/digitalcard';
+import YogahomeLanding from './COMPONENT-YOGA/B-LAYOUT-HOME/home';
 
 function App() {
   return (
     <>
-      <HashRouter>
+      <Router>
         <Routes>
-          <Route path="/*" element={<Layout />}>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<YogahomeLanding />} />
           </Route>
+          <Route path="GET-IN-TOUCH" element={<Contact />} />
         </Routes>
-      </HashRouter>
+      </Router>
     </>
   );
 }
 
 export default App;
-
-

@@ -26,8 +26,22 @@ a {
 .MENU-circle-YOGA {
     color: white;
     background-color: #ed7235da;
-    padding: 18px;
-    border-radius: 50px;
+    width: 56px;
+    /* fixed width */
+    height: 56px;
+    /* fixed height (same as width) */
+    border-radius: 50%;
+    /* makes it a circle */
+    display: flex;
+    /* centers the icon/text */
+    align-items: center;
+    justify-content: center;
+
+    /* reset default button styles */
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
 }
 
 .nav-yoga-bg-main {

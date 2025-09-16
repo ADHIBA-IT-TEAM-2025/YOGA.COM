@@ -1,9 +1,0 @@
-
-RewriteOptions inherit
-RewriteEngine On
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-RewriteCond %{HTTP_HOST} ^yogaproperty\.com$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.yogaproperty\.com$
-RewriteRule ^/?$ "https\:\/\/www\.facebook\.com\/yogaproperties" [R=301,L]
-
