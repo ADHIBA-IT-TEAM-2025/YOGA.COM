@@ -8,6 +8,8 @@
     background-color: #ddd;
     /* optional fallback */
 }
+
+
 .loader-container {
     position: fixed;
     top: 0;
