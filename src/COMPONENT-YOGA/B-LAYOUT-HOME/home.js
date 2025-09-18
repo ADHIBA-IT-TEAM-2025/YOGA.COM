@@ -19,13 +19,14 @@ import {
   faXTwitter,
   faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
-import {  useInView } from 'framer-motion';
+import { useInView } from 'framer-motion';
 import YogaForm from './YogaForm';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import Carousel from 'react-bootstrap/Carousel';
 import RealEstateImage from '../../RealEstateImage';
+import Layout from '../A-LAYOUT-NAV/nav';
 
 const style = {
   position: 'absolute',
@@ -42,6 +43,8 @@ const style = {
 const YogahomeLanding = () => {
   return (
     <>
+      <Layout />
+
       <Homeyoga />
 
       <Partner />
@@ -61,8 +64,8 @@ const Homeyoga = () => {
   return (
     <>
       <section id="Homeyoga">
-        <RealEstateImage 
-          src={"/IMAGE/landing-banner-yoga.webp"}
+        <RealEstateImage
+          src={'/IMAGE/landing-banner-yoga.webp'}
           className="img-fluid"
           style={{ width: '100%', height: '100%' }}
         />
@@ -74,28 +77,27 @@ const Homeyoga = () => {
 const Partner = () => {
   return (
     <>
-<section className="container" id="Partner">
-  <div className="row align-items-center trust-partr-sec-div">
-    {/* Left side text */}
-    <div className="col-lg-10 col-md-6">
-      <h2>
-        Our Trusted <br />
-        <span>Partner</span>
-      </h2>
-    </div>
+      <section className="container" id="Partner">
+        <div className="row align-items-center trust-partr-sec-div">
+          {/* Left side text */}
+          <div className="col-lg-10 col-md-6">
+            <h2>
+              Our Trusted <br />
+              <span>Partner</span>
+            </h2>
+          </div>
 
-    {/* Right side image */}
-    <div className="col-lg-2 col-md-6 d-flex justify-content-end">
-      <RealEstateImage
-        src={'/IMAGE/YOGALOGO-1.webp'}
-        alt="trust-partner"
-        className="img-fluid"
-        style={{ width: '120px', height: '120px', objectFit: 'contain' }}
-      />
-    </div>
-  </div>
-</section>
-
+          {/* Right side image */}
+          <div className="col-lg-2 col-md-6 d-flex justify-content-end">
+            <RealEstateImage
+              src={'/IMAGE/YOGALOGO-1.webp'}
+              alt="trust-partner"
+              className="img-fluid"
+              style={{ width: '120px', height: '120px', objectFit: 'contain' }}
+            />
+          </div>
+        </div>
+      </section>
 
       <section>
         {/* Dream House */}
@@ -104,7 +106,10 @@ const Partner = () => {
         </div>
         {/* mobile image Dream house */}
         <div className="dream-home-mob-img">
-          <RealEstateImage src={"/IMAGE/index-img-yoga.webp"} className="img-fluid " />
+          <RealEstateImage
+            src={'/IMAGE/index-img-yoga.webp'}
+            className="img-fluid "
+          />
         </div>
         {/* full contents of Dream house */}
         <section className="section-main-dream-house-yoga">

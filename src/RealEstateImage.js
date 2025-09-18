@@ -8,8 +8,8 @@ function RealEstateImage({ src, alt }) {
       <LazyLoadImage
         alt={alt}
         src={src}
-        effect="blur" // 👈 shows blur until loaded
-        placeholderSrc="/placeholder-color.jpg" // 👈 fallback color/image
+        effect="blur"
+        placeholderSrc="/placeholder-color.jpg" // make sure this file exists!
         width="100%"
         height="auto"
       />

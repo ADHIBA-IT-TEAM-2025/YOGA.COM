@@ -8,7 +8,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Layout = () => {
 
-    const [navbarHeight, setNavbarHeight] = useState(100);
+    const [navbarHeight] = useState(100);
 
     const scrollValue = () => {
         const scroll = window.scrollY;
@@ -168,14 +168,14 @@ const Layout = () => {
           >
             <ul className="navbar-yoga-bg-main-ul">
               <li>
-                <Link to="/GET-IN-TOUCH">
+                {/* <Link to="/GET-IN-TOUCH"> */}
                   {' '}
                   <img
                     src={'/IMAGE/OMSAKTHI-2.webp'}
                     alt="Logo"
                     className="navbar-logo me-4"
                   />
-                </Link>
+                {/* </Link> */}
               </li>
               <li className="menu-nav-yoga">
                 <div>
